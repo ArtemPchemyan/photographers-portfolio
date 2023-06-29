@@ -1,5 +1,9 @@
 import React from "react";
 
-export function ProjectsTitle() {
-  return <h1 className="text-8xl font-semibold leading-snug">Projects</h1>;
+type PropsType = {
+  title: string;
+};
+
+export function ProjectsTitle({ title }: PropsType) {
+  return <h1 className="text-8xl font-semibold leading-snug">{title}</h1>;
 }

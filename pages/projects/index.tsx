@@ -13,7 +13,7 @@ export default function ProjectsPage() {
   return (
     <ProjectsLayout
       navbar={<h1>NavBar</h1>}
-      title={<ProjectsTitle />}
+      title={<ProjectsTitle title={"Projects"} />}
       projects={projects.map((project) => (
         <ProjectCover key={project.id} project={project} />
       ))}
