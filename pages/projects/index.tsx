@@ -4,6 +4,7 @@ import { ProjectCover } from "@/components/projects/project-cover";
 import { PROJECTS, ProjectStateType } from "@/store/model/projects-store";
 import { useState } from "react";
 import { useAppSelector } from "@/store/store";
+import { Navbar } from "@/components/navbar/navbar";
 
 export default function ProjectsPage() {
   const projects = useAppSelector<ProjectStateType[]>(
@@ -12,7 +13,7 @@ export default function ProjectsPage() {
 
   return (
     <ProjectsLayout
-      navbar={<h1>NavBar</h1>}
+      navbar={<Navbar />}
       title={<ProjectsTitle title={"Projects"} />}
       projects={projects.map((project) => (
         <ProjectCover key={project.id} project={project} />

@@ -2,8 +2,11 @@ import React from "react";
 import { useRouter } from "next/router";
 import { useAppSelector } from "@/store/store";
 import { ProjectStateType } from "@/store/model/projects-store";
-import { useSlider } from "@/components/projects/model/use-slider";
+import { useSlider } from "@/components/projects/use-slider";
 import { animated } from "@react-spring/web";
+import { TransparentButton } from "@/components/ui-kit/transparent-button";
+import { PhotoLayout } from "@/components/projects/photo-layout";
+import { Navbar } from "@/components/navbar/navbar";
 
 export default function PhotoId() {
   const projects = useAppSelector<ProjectStateType[]>(
@@ -20,35 +23,36 @@ export default function PhotoId() {
     +photoId! ?? 0
   );
 
+  const actionsRender = (
+    <div>
+      <TransparentButton
+        onClick={() => setActiveIndex(activeIndex - 1)}
+        disabled={activeIndex === 0}
+        side={"left"}
+      />
+      {album && (
+        <TransparentButton
+          onClick={() => setActiveIndex(activeIndex + 1)}
+          disabled={activeIndex === album.length - 1}
+          side={"right"}
+        />
+      )}
+    </div>
+  );
+
   return (
-    <>
-      <div className="relative w-full h-screen overflow-hidden">
-        {transitions((style, item) => (
-          <animated.img
-            key={item.id}
-            style={style}
-            src={item.src.src}
-            alt="albumPhoto"
-            className={
-              "absolute inset-0 w-full h-full object-cover object-center"
-            }
-          ></animated.img>
-        ))}
-      </div>
-      <div>
-        <button
-          onClick={() => setActiveIndex(activeIndex - 1)}
-          disabled={activeIndex === 0}
-          className="absolute h-screen z-10 left-0 top-0 w-1/2 bg-transparent border-none"
-        ></button>
-        {album && (
-          <button
-            onClick={() => setActiveIndex(activeIndex + 1)}
-            disabled={activeIndex === album.length - 1}
-            className="absolute h-screen z-10 right-0 top-0 w-1/2 bg-transparent border-none"
-          ></button>
-        )}
-      </div>
-    </>
+    <PhotoLayout navbar={<Navbar />} actions={actionsRender}>
+      {transitions((style, item) => (
+        <animated.img
+          key={item.id}
+          style={style}
+          src={item.src.src}
+          alt="albumPhoto"
+          className={
+            "absolute inset-0 w-full h-full object-cover object-center"
+          }
+        ></animated.img>
+      ))}
+    </PhotoLayout>
   );
 }
