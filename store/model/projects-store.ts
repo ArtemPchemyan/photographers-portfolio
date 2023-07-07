@@ -30,15 +30,54 @@ import street29 from "../model/albums-src/street/DSCF9415.jpg";
 import street30 from "../model/albums-src/street/DSCF9749.jpg";
 import street31 from "../model/albums-src/street/DSCF9826.jpg";
 import street32 from "../model/albums-src/street/f1022787-e095-4851-a816-3fdbbff46c9a.jpg";
+
 import art11 from "store/model/albums-src/art1/326e8d18-6873-4233-bc3b-898bad343644.jpg";
 import art12 from "store/model/albums-src/art1/ffa55616-48b4-46f2-b4d4-d4afacce40bb.jpg";
 import art13 from "store/model/albums-src/art1/4529b35a-104e-4e56-8af2-05cbc946c5ca.jpg";
-import club1 from "store/model/albums-src/club/7fb57ae3-4f41-474f-bb7d-c1d6ebf52c8c_rw_1920.jpg";
-import club2 from "store/model/albums-src/club/2b401f02-e087-44f3-a430-a91acc69e852_rw_1920.jpg";
+
+import club1 from "store/model/albums-src/club/cover.jpg";
+import club2 from "store/model/albums-src/club/1.jpg";
 import club3 from "store/model/albums-src/club/1c02a889-6d81-4c3f-8755-920e00da1c2a_rw_1920.jpg";
-import exibition1 from "store/model/albums-src/exibition/DSCF4566.jpg";
-import exibition2 from "store/model/albums-src/exibition/DSCF4594.jpg";
-import exibition3 from "store/model/albums-src/exibition/DSCF4581.jpg";
+import club4 from "store/model/albums-src/club/2.jpg";
+import club5 from "store/model/albums-src/club/3.jpg";
+import club7 from "store/model/albums-src/club/7fb57ae3-4f41-474f-bb7d-c1d6ebf52c8c_rw_1920.jpg";
+import club8 from "store/model/albums-src/club/364a02b4-6d1d-43da-b347-a30e96c3c676_rw_1920.jpg";
+import club9 from "store/model/albums-src/club/1399d498-f2f9-4eec-99fc-25d4c5c220e4_rw_1920.jpg";
+import club10 from "store/model/albums-src/club/1926fca6-8fb3-4160-82c6-f93117a8dd31_rw_1920.jpg";
+import club11 from "store/model/albums-src/club/50099e1d-62bb-4a0d-9522-28ca8f9270eb_rw_1920.jpg";
+import club12 from "store/model/albums-src/club/0523164f-86d9-438a-acda-3e7206393f85_rw_1920.jpg";
+import club13 from "store/model/albums-src/club/a2b85ca4-8a14-4c21-ac77-89f0e88f7444_rw_1920.jpg";
+import club14 from "store/model/albums-src/club/b0dc7447-9fde-4a54-85a8-e4719f7082e1_rw_1920.jpg";
+import club15 from "store/model/albums-src/club/d33c9aa8-8d6e-4cb9-a2e7-6392890cccf2_rw_1920.jpg";
+import club16 from "store/model/albums-src/club/df993b5b-4dc7-4e26-9f65-228c7bc4339c_rw_1920.jpg";
+import club17 from "store/model/albums-src/club/DSCF6137.jpg";
+import club18 from "store/model/albums-src/club/DSCF6352.jpg";
+import club19 from "store/model/albums-src/club/DSCF6439.jpg";
+import club20 from "store/model/albums-src/club/DSCF6516.jpg";
+import club21 from "store/model/albums-src/club/DSCF6841.jpg";
+
+import exibition1 from "store/model/albums-src/exhibition/cover.jpg";
+import exibition2 from "store/model/albums-src/exhibition/DSCF4566.jpg";
+import exibition3 from "store/model/albums-src/exhibition/DSCF4581.jpg";
+import exibition4 from "store/model/albums-src/exhibition/DSCF4594.jpg";
+import exibition5 from "store/model/albums-src/exhibition/DSCF4600.jpg";
+import exibition6 from "store/model/albums-src/exhibition/DSCF4615.jpg";
+import exibition7 from "store/model/albums-src/exhibition/DSCF4619.jpg";
+import exibition8 from "store/model/albums-src/exhibition/DSCF4649.jpg";
+import exibition9 from "store/model/albums-src/exhibition/DSCF4653.jpg";
+import exibition10 from "store/model/albums-src/exhibition/DSCF4663.jpg";
+import exibition11 from "store/model/albums-src/exhibition/DSCF4667.jpg";
+import exibition12 from "store/model/albums-src/exhibition/DSCF4680.jpg";
+import exibition13 from "store/model/albums-src/exhibition/DSCF4703.jpg";
+import exibition14 from "store/model/albums-src/exhibition/DSCF4707.jpg";
+import exibition15 from "store/model/albums-src/exhibition/DSCF4721.jpg";
+import exibition16 from "store/model/albums-src/exhibition/DSCF4737.jpg";
+import exibition17 from "store/model/albums-src/exhibition/DSCF4740.jpg";
+import exibition18 from "store/model/albums-src/exhibition/DSCF4780.jpg";
+import exibition19 from "store/model/albums-src/exhibition/DSCF4792.jpg";
+import exibition20 from "store/model/albums-src/exhibition/DSCF4797.jpg";
+import exibition21 from "store/model/albums-src/exhibition/DSCF4814.jpg";
+
 import fashion1 from "store/model/albums-src/fashion/cover.jpg";
 import fashion2 from "store/model/albums-src/fashion/1e80b346-e41c-493f-9b2f-21656a233742.jpg";
 import fashion3 from "store/model/albums-src/fashion/7d4a75a5-1d87-4861-af37-fdaab80b87cc.jpg";
@@ -47,24 +86,128 @@ import fashion5 from "store/model/albums-src/fashion/2428934d-8828-4b2b-be0a-2bb
 import fashion6 from "store/model/albums-src/fashion/a88e9ee1-3019-44e7-a1e0-b4454b005761.jpg";
 import fashion7 from "store/model/albums-src/fashion/b760d14a-7fbf-4aa2-8b1d-c027ab99fab9.jpg";
 import fashion8 from "store/model/albums-src/fashion/bc4792f6-63e9-46df-855b-31d07e317915_rw_1920.jpg";
-import matoka1 from "store/model/albums-src/matoka/DSCF0030-восстановлено.jpg";
-import matoka2 from "store/model/albums-src/matoka/1.jpg";
-import matoka3 from "store/model/albums-src/matoka/DSCF0012.jpg";
-import dentist1 from "store/model/albums-src/dentist/910037c8-40e7-4d23-aa8b-86d4e5f68102_rw_1920.jpg";
-import dentist2 from "store/model/albums-src/dentist/59ac6c1a-b1db-45c6-ad4d-ae521260be41_rw_3840.jpg";
-import dentist3 from "store/model/albums-src/dentist/2ef55ab1-0bbf-4cb1-af34-8503afde7623_rw_1920.jpg";
-import parliament1 from "store/model/albums-src/parliament/DSCF0988.jpg";
+
+import matoka1 from "store/model/albums-src/matoka/2.1.jpg";
+import matoka2 from "store/model/albums-src/matoka/2.2.jpg";
+import matoka3 from "store/model/albums-src/matoka/2.3.jpg";
+import matoka4 from "store/model/albums-src/matoka/4.2.jpg";
+import matoka5 from "store/model/albums-src/matoka/1.3.jpg";
+import matoka6 from "store/model/albums-src/matoka/1.4.jpg";
+import matoka7 from "store/model/albums-src/matoka/1.5.jpg";
+import matoka8 from "store/model/albums-src/matoka/1.6.jpg";
+import matoka9 from "store/model/albums-src/matoka/1.8.jpg";
+import matoka10 from "store/model/albums-src/matoka/1.9.jpg";
+import matoka11 from "store/model/albums-src/matoka/1.10.jpg";
+import matoka12 from "store/model/albums-src/matoka/1.11.jpg";
+import matoka15 from "store/model/albums-src/matoka/2.4.jpg";
+import matoka16 from "store/model/albums-src/matoka/2.5.jpg";
+import matoka17 from "store/model/albums-src/matoka/2.6.jpg";
+import matoka18 from "store/model/albums-src/matoka/2.7.jpg";
+import matoka19 from "store/model/albums-src/matoka/2.8.jpg";
+import matoka20 from "store/model/albums-src/matoka/2.9.jpg";
+import matoka21 from "store/model/albums-src/matoka/2.10.jpg";
+import matoka22 from "store/model/albums-src/matoka/2.12.jpg";
+import matoka23 from "store/model/albums-src/matoka/3.1.jpg";
+import matoka24 from "store/model/albums-src/matoka/3.2.jpg";
+import matoka25 from "store/model/albums-src/matoka/3.3.jpg";
+import matoka26 from "store/model/albums-src/matoka/3.4.jpg";
+import matoka27 from "store/model/albums-src/matoka/3.5.jpg";
+import matoka28 from "store/model/albums-src/matoka/3.6.jpg";
+import matoka29 from "store/model/albums-src/matoka/3.7.jpg";
+import matoka30 from "store/model/albums-src/matoka/3.8.jpg";
+import matoka31 from "store/model/albums-src/matoka/3.9.jpg";
+import matoka32 from "store/model/albums-src/matoka/3.10.jpg";
+import matoka33 from "store/model/albums-src/matoka/3.11.jpg";
+import matoka34 from "store/model/albums-src/matoka/3.12.jpg";
+import matoka35 from "store/model/albums-src/matoka/3.13.jpg";
+import matoka36 from "store/model/albums-src/matoka/4.1.jpg";
+import matoka37 from "store/model/albums-src/matoka/2.11.jpg";
+import matoka38 from "store/model/albums-src/matoka/4.3.jpg";
+import matoka39 from "store/model/albums-src/matoka/4.4.jpg";
+import matoka40 from "store/model/albums-src/matoka/4.5.jpg";
+import matoka41 from "store/model/albums-src/matoka/4.6.jpg";
+import matoka42 from "store/model/albums-src/matoka/4.7.jpg";
+import matoka43 from "store/model/albums-src/matoka/4.8.jpg";
+import matoka44 from "store/model/albums-src/matoka/4.9.jpg";
+import matoka45 from "store/model/albums-src/matoka/4.10.jpg";
+import matoka46 from "store/model/albums-src/matoka/4.11.jpg";
+import matoka47 from "store/model/albums-src/matoka/4.12.jpg";
+
+import dentist1 from "store/model/albums-src/dentist/1.7.cover.jpg";
+import dentist2 from "store/model/albums-src/dentist/1.3.jpg";
+import dentist3 from "store/model/albums-src/dentist/1.4.jpg";
+import dentist4 from "store/model/albums-src/dentist/1.5.jpg";
+import dentist5 from "store/model/albums-src/dentist/1.6.jpg";
+import dentist6 from "store/model/albums-src/dentist/1.2.jpg";
+import dentist7 from "store/model/albums-src/dentist/2.1.jpg";
+import dentist8 from "store/model/albums-src/dentist/2.2.jpg";
+import dentist9 from "store/model/albums-src/dentist/2.3.jpg";
+import dentist10 from "store/model/albums-src/dentist/2.4.jpg";
+import dentist11 from "store/model/albums-src/dentist/2.5.jpg";
+import dentist12 from "store/model/albums-src/dentist/2.6.jpg";
+import dentist13 from "store/model/albums-src/dentist/2.7.jpg";
+import dentist14 from "store/model/albums-src/dentist/2.8.jpg";
+import dentist15 from "store/model/albums-src/dentist/3.1.jpg";
+import dentist16 from "store/model/albums-src/dentist/3.2.jpg";
+import dentist17 from "store/model/albums-src/dentist/3.3.jpg";
+import dentist18 from "store/model/albums-src/dentist/3.4.jpg";
+import dentist19 from "store/model/albums-src/dentist/3.5.jpg";
+import dentist20 from "store/model/albums-src/dentist/3.6.jpg";
+import dentist21 from "store/model/albums-src/dentist/4.1.jpg";
+import dentist22 from "store/model/albums-src/dentist/4.2.jpg";
+import dentist23 from "store/model/albums-src/dentist/4.3.jpg";
+import dentist24 from "store/model/albums-src/dentist/4.4.jpg";
+import dentist25 from "store/model/albums-src/dentist/4.5.jpg";
+import dentist26 from "store/model/albums-src/dentist/4.6.jpg";
+import dentist27 from "store/model/albums-src/dentist/4.7.jpg";
+import dentist28 from "store/model/albums-src/dentist/4.8.jpg";
+import dentist29 from "store/model/albums-src/dentist/4.9.jpg";
+import dentist30 from "store/model/albums-src/dentist/4.10.jpg";
+import dentist31 from "store/model/albums-src/dentist/4.11.jpg";
+import dentist32 from "store/model/albums-src/dentist/4.12.jpg";
+import dentist33 from "store/model/albums-src/dentist/4.13.jpg";
+import dentist34 from "store/model/albums-src/dentist/4.14.jpg";
+import dentist35 from "store/model/albums-src/dentist/4.15.jpg";
+import dentist36 from "store/model/albums-src/dentist/4.16.jpg";
+import dentist37 from "store/model/albums-src/dentist/4.17.jpg";
+import dentist38 from "store/model/albums-src/dentist/4.18.jpg";
+import dentist39 from "store/model/albums-src/dentist/4.19.jpg";
+import dentist40 from "store/model/albums-src/dentist/4.20.jpg";
+
+import parliament1 from "store/model/albums-src/parliament/cover.jpg";
 import parliament2 from "store/model/albums-src/parliament/DSCF0944.jpg";
 import parliament3 from "store/model/albums-src/parliament/DSCF0977.jpg";
+import parliament4 from "store/model/albums-src/parliament/DSCF0988.jpg";
+import parliament5 from "store/model/albums-src/parliament/DSCF0996.jpg";
+import parliament6 from "store/model/albums-src/parliament/DSCF1003.jpg";
+import parliament7 from "store/model/albums-src/parliament/DSCF1015.jpg";
+import parliament8 from "store/model/albums-src/parliament/DSCF1019.jpg";
+import parliament9 from "store/model/albums-src/parliament/DSCF1023.jpg";
+import parliament10 from "store/model/albums-src/parliament/DSCF1043.jpg";
+import parliament11 from "store/model/albums-src/parliament/DSCF1068.jpg";
+import parliament12 from "store/model/albums-src/parliament/DSCF1086.jpg";
+import parliament13 from "store/model/albums-src/parliament/DSCF1094.jpg";
+import parliament14 from "store/model/albums-src/parliament/DSCF1098.jpg";
+import parliament15 from "store/model/albums-src/parliament/DSCF1101.jpg";
+import parliament16 from "store/model/albums-src/parliament/DSCF1113.jpg";
+import parliament17 from "store/model/albums-src/parliament/DSCF1144.jpg";
+import parliament18 from "store/model/albums-src/parliament/DSCF1153.jpg";
+import parliament19 from "store/model/albums-src/parliament/DSCF1241.jpg";
+import parliament20 from "store/model/albums-src/parliament/DSCF1244.jpg";
+import parliament21 from "store/model/albums-src/parliament/DSCF1328.jpg";
+import parliament22 from "store/model/albums-src/parliament/DSCF1396.jpg";
+
 import art21 from "store/model/albums-src/art2/695c66aa-255c-4c41-bd40-7cc82429fa14.jpg";
 import art22 from "store/model/albums-src/art2/890a767f-b263-4307-8679-db881505211e.jpg";
 import art23 from "store/model/albums-src/art2/5a27fc1c-14e2-407f-9aae-a67f805fcffd.jpg";
 import art31 from "store/model/albums-src/art3/1.jpg";
 import art32 from "store/model/albums-src/art3/2.jpg";
 import art33 from "store/model/albums-src/art3/3.jpg";
+
 import cilantro1 from "store/model/albums-src/cilantro/0ef1636e-eb28-4cfd-9867-106f90606c5c_rw_1920.jpg";
 import cilantro2 from "store/model/albums-src/cilantro/5f8d4a9d-2626-49f9-8156-fc1316898723_rw_1920.jpg";
 import cilantro3 from "store/model/albums-src/cilantro/5b8e49ec-7904-477e-8ade-2c4ebc5173b3_rw_1920.jpg";
+
 import meat1 from "store/model/albums-src/meat/5eda0d6e-5c27-4955-bcc2-22e18c6c0368.jpg";
 import meat2 from "store/model/albums-src/meat/8c8eaf19-3f81-4bfe-a679-ee9149882f1b_rw_1920.jpg";
 import meat3 from "store/model/albums-src/meat/3cd99fa7-5cb4-4991-8cad-7bf562210436_rw_1920.jpg";
@@ -129,11 +272,46 @@ const CLUB_ALBUM: AlbumType[] = [
   { id: "0", src: club1 },
   { id: "1", src: club2 },
   { id: "2", src: club3 },
+  { id: "3", src: club4 },
+  { id: "4", src: club5 },
+  { id: "5", src: club7 },
+  { id: "6", src: club8 },
+  { id: "7", src: club9 },
+  { id: "8", src: club10 },
+  { id: "9", src: club11 },
+  { id: "10", src: club12 },
+  { id: "11", src: club13 },
+  { id: "12", src: club14 },
+  { id: "13", src: club15 },
+  { id: "14", src: club16 },
+  { id: "15", src: club17 },
+  { id: "16", src: club18 },
+  { id: "17", src: club19 },
+  { id: "18", src: club20 },
+  { id: "19", src: club21 },
 ];
 const EXIBITION_ALBUM: AlbumType[] = [
   { id: "0", src: exibition1 },
   { id: "1", src: exibition2 },
   { id: "2", src: exibition3 },
+  { id: "3", src: exibition4 },
+  { id: "4", src: exibition5 },
+  { id: "5", src: exibition6 },
+  { id: "6", src: exibition7 },
+  { id: "7", src: exibition8 },
+  { id: "8", src: exibition9 },
+  { id: "9", src: exibition10 },
+  { id: "10", src: exibition11 },
+  { id: "11", src: exibition12 },
+  { id: "12", src: exibition13 },
+  { id: "13", src: exibition14 },
+  { id: "14", src: exibition15 },
+  { id: "15", src: exibition16 },
+  { id: "16", src: exibition17 },
+  { id: "17", src: exibition18 },
+  { id: "18", src: exibition19 },
+  { id: "19", src: exibition20 },
+  { id: "20", src: exibition21 },
 ];
 const FASHION_ALBUM: AlbumType[] = [
   { id: "0", src: fashion1 },
@@ -149,16 +327,114 @@ const MATOKA_ALBUM: AlbumType[] = [
   { id: "0", src: matoka1 },
   { id: "1", src: matoka2 },
   { id: "2", src: matoka3 },
+  { id: "3", src: matoka4 },
+  { id: "4", src: matoka5 },
+  { id: "5", src: matoka6 },
+  { id: "6", src: matoka7 },
+  { id: "7", src: matoka8 },
+  { id: "8", src: matoka9 },
+  { id: "9", src: matoka10 },
+  { id: "10", src: matoka11 },
+  { id: "11", src: matoka12 },
+  { id: "14", src: matoka15 },
+  { id: "15", src: matoka16 },
+  { id: "16", src: matoka17 },
+  { id: "17", src: matoka18 },
+  { id: "18", src: matoka19 },
+  { id: "19", src: matoka20 },
+  { id: "20", src: matoka21 },
+  { id: "21", src: matoka22 },
+  { id: "22", src: matoka23 },
+  { id: "23", src: matoka24 },
+  { id: "24", src: matoka25 },
+  { id: "25", src: matoka26 },
+  { id: "26", src: matoka27 },
+  { id: "27", src: matoka28 },
+  { id: "28", src: matoka29 },
+  { id: "29", src: matoka30 },
+  { id: "30", src: matoka31 },
+  { id: "31", src: matoka32 },
+  { id: "32", src: matoka33 },
+  { id: "33", src: matoka34 },
+  { id: "34", src: matoka35 },
+  { id: "35", src: matoka36 },
+  { id: "36", src: matoka37 },
+  { id: "37", src: matoka38 },
+  { id: "38", src: matoka39 },
+  { id: "39", src: matoka40 },
+  { id: "40", src: matoka41 },
+  { id: "41", src: matoka42 },
+  { id: "42", src: matoka43 },
+  { id: "43", src: matoka44 },
+  { id: "44", src: matoka45 },
+  { id: "45", src: matoka46 },
+  { id: "46", src: matoka47 },
 ];
 const DENTIST_ALBUM: AlbumType[] = [
   { id: "0", src: dentist1 },
   { id: "1", src: dentist2 },
   { id: "2", src: dentist3 },
+  { id: "3", src: dentist4 },
+  { id: "4", src: dentist5 },
+  { id: "5", src: dentist6 },
+  { id: "6", src: dentist7 },
+  { id: "7", src: dentist8 },
+  { id: "8", src: dentist9 },
+  { id: "9", src: dentist10 },
+  { id: "10", src: dentist11 },
+  { id: "11", src: dentist12 },
+  { id: "12", src: dentist13 },
+  { id: "13", src: dentist14 },
+  { id: "14", src: dentist15 },
+  { id: "15", src: dentist16 },
+  { id: "16", src: dentist17 },
+  { id: "17", src: dentist18 },
+  { id: "18", src: dentist19 },
+  { id: "19", src: dentist20 },
+  { id: "20", src: dentist21 },
+  { id: "21", src: dentist22 },
+  { id: "22", src: dentist23 },
+  { id: "23", src: dentist24 },
+  { id: "24", src: dentist25 },
+  { id: "25", src: dentist26 },
+  { id: "26", src: dentist27 },
+  { id: "27", src: dentist28 },
+  { id: "28", src: dentist29 },
+  { id: "29", src: dentist30 },
+  { id: "30", src: dentist31 },
+  { id: "31", src: dentist32 },
+  { id: "32", src: dentist33 },
+  { id: "33", src: dentist34 },
+  { id: "34", src: dentist35 },
+  { id: "35", src: dentist36 },
+  { id: "36", src: dentist37 },
+  { id: "37", src: dentist38 },
+  { id: "38", src: dentist39 },
+  { id: "39", src: dentist40 },
 ];
 const PARLIAMENT_ALBUM: AlbumType[] = [
   { id: "0", src: parliament1 },
   { id: "1", src: parliament2 },
   { id: "2", src: parliament3 },
+  { id: "3", src: parliament4 },
+  { id: "4", src: parliament5 },
+  { id: "5", src: parliament6 },
+  { id: "6", src: parliament7 },
+  { id: "7", src: parliament8 },
+  { id: "8", src: parliament9 },
+  { id: "9", src: parliament10 },
+  { id: "10", src: parliament11 },
+  { id: "11", src: parliament12 },
+  { id: "12", src: parliament13 },
+  { id: "13", src: parliament14 },
+  { id: "14", src: parliament15 },
+  { id: "15", src: parliament16 },
+  { id: "16", src: parliament17 },
+  { id: "17", src: parliament18 },
+  { id: "18", src: parliament19 },
+  { id: "19", src: parliament20 },
+  { id: "20", src: parliament21 },
+  { id: "21", src: parliament22 },
 ];
 const ART2_ALBUM: AlbumType[] = [
   { id: "0", src: art21 },
@@ -232,9 +508,9 @@ export const PROJECTS: ProjectStateType[] = [
   },
   {
     id: "6",
-    title: "Dentist",
+    title: '"Doctor"',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
+      "Подготовка к съемки состояла в поисках референсов, и выбор стилистики съемки вместе с заказчиком.\n",
     album: DENTIST_ALBUM,
     // style: {gridArea: "project3", background: "#77c7c8"},
   },
