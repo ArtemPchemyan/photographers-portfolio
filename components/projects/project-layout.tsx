@@ -18,7 +18,7 @@ export function ProjectLayout({
       {navbar}
       <div className="pt-24 pb-12">{title}</div>
       <div className="pb-12">{description}</div>
-      <div className="flex gap-6 ">{children}</div>
+      <div className="grid grid-cols-4 gap-6">{children}</div>
     </div>
   );
 }
