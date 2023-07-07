@@ -9,9 +9,11 @@ type PropsType = {
 
 export function ProjectCover({ project }: PropsType) {
   return (
-    <Link href={`/projects/${project.id}`}>
-      <Image src={project.album[0].src} alt={"cover"} />
-      <h2>{project.title}</h2>
-    </Link>
+    <div className="overflow-hidden flex items-center">
+      <Link href={`/projects/${project.id}`}>
+        <Image src={project.album[0].src} alt={"cover"} />
+        <h2>{project.title}</h2>
+      </Link>
+    </div>
   );
 }

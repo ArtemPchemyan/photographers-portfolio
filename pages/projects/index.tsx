@@ -1,8 +1,7 @@
 import { ProjectsLayout } from "@/components/projects";
 import { ProjectsTitle } from "@/components/projects/projects-title";
 import { ProjectCover } from "@/components/projects/project-cover";
-import { PROJECTS, ProjectStateType } from "@/store/model/projects-store";
-import { useState } from "react";
+import { ProjectStateType } from "@/store/model/projects-store";
 import { useAppSelector } from "@/store/store";
 import { Navbar } from "@/components/navbar/navbar";
 

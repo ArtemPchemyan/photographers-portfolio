@@ -49,7 +49,7 @@ export default function PhotoId() {
           src={item.src.src}
           alt="albumPhoto"
           className={
-            "absolute inset-0 w-full h-full object-cover object-center"
+            "absolute inset-0 h-full object-cover object-center mx-auto"
           }
         ></animated.img>
       ))}

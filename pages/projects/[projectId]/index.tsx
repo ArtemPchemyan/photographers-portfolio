@@ -1,12 +1,11 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { useAppSelector } from "@/store/store";
-import Image from "next/image";
 import { ProjectStateType } from "@/store/model/projects-store";
 import { ProjectLayout } from "@/components/projects/project-layout";
 import { ProjectsTitle } from "@/components/projects/projects-title";
-import Link from "next/link";
 import { Navbar } from "@/components/navbar/navbar";
+import { ProjectPhoto } from "@/components/projects/project-photo";
 
 export default function ProjectId() {
   const projects = useAppSelector<ProjectStateType[]>(
@@ -26,9 +25,7 @@ export default function ProjectId() {
         description={project.description}
       >
         {project.album.map((el, index) => (
-          <Link href={`/projects/${project.id}/${el.id}`} key={index}>
-            <Image src={el.src} alt={"img"} />
-          </Link>
+          <ProjectPhoto key={index} projectId={projectId} photo={el} />
         ))}
       </ProjectLayout>
     );
