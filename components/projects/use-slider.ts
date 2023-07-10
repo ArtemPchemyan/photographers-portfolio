@@ -19,14 +19,14 @@ export function useSlider(album: AlbumType[], photoId: number) {
       transform: "translateX(0)",
     },
     leave: {
-      opacity: 0.3,
+      opacity: 0,
       transform:
         activeIndex > prevIndexRef.current
           ? "translateX(-100%)"
           : "translateX(100%)",
     },
     config: {
-      duration: 500,
+      duration: 300,
     },
     onRest: () => {
       prevIndexRef.current = activeIndex;

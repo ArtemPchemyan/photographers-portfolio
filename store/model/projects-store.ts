@@ -31,9 +31,16 @@ import street30 from "../model/albums-src/street/DSCF9749.jpg";
 import street31 from "../model/albums-src/street/DSCF9826.jpg";
 import street32 from "../model/albums-src/street/f1022787-e095-4851-a816-3fdbbff46c9a.jpg";
 
-import art11 from "store/model/albums-src/art1/326e8d18-6873-4233-bc3b-898bad343644.jpg";
-import art12 from "store/model/albums-src/art1/ffa55616-48b4-46f2-b4d4-d4afacce40bb.jpg";
-import art13 from "store/model/albums-src/art1/4529b35a-104e-4e56-8af2-05cbc946c5ca.jpg";
+import art1 from "store/model/albums-src/art-fear/1-cover.jpg";
+import art2 from "store/model/albums-src/art-fear/2.jpg";
+import art3 from "store/model/albums-src/art-fear/3.jpg";
+import art4 from "store/model/albums-src/art-fear/4.jpg";
+import art5 from "store/model/albums-src/art-fear/5.jpg";
+import art6 from "store/model/albums-src/art-fear/6.jpg";
+import art7 from "store/model/albums-src/art-fear/7.jpg";
+import art8 from "store/model/albums-src/art-fear/8.jpg";
+import art9 from "store/model/albums-src/art-fear/9.jpg";
+import art10 from "store/model/albums-src/art-fear/10.jpg";
 
 import club1 from "store/model/albums-src/club/cover.jpg";
 import club2 from "store/model/albums-src/club/1.jpg";
@@ -264,9 +271,16 @@ const STREET_ALBUM: AlbumType[] = [
   { id: "31", src: street32 },
 ];
 const ART1_ALBUM: AlbumType[] = [
-  { id: "0", src: art11 },
-  { id: "1", src: art12 },
-  { id: "2", src: art13 },
+  { id: "0", src: art1 },
+  { id: "1", src: art2 },
+  { id: "2", src: art3 },
+  { id: "3", src: art4 },
+  { id: "4", src: art5 },
+  { id: "5", src: art6 },
+  { id: "6", src: art7 },
+  { id: "7", src: art8 },
+  { id: "8", src: art9 },
+  { id: "9", src: art10 },
 ];
 const CLUB_ALBUM: AlbumType[] = [
   { id: "0", src: club1 },
@@ -468,9 +482,9 @@ export const PROJECTS: ProjectStateType[] = [
   },
   {
     id: "1",
-    title: "Art1",
+    title: '"Fear" Art Photography',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
+      "“Страх” - это серия фотографий, которая демонстрирует мой новый подход к теме страха. И не важно почему, важная встреча, большая покупка или переезд в другую страну. У каждого свои страхи, и я хотел передать свою личную и автобиографическую историю через эту серию фотографий.",
     album: ART1_ALBUM,
     // style: {gridArea: "project2", background: "#c2f50a"},
   },
