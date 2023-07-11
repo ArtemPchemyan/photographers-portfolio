@@ -204,9 +204,15 @@ import parliament20 from "store/model/albums-src/parliament/DSCF1244.jpg";
 import parliament21 from "store/model/albums-src/parliament/DSCF1328.jpg";
 import parliament22 from "store/model/albums-src/parliament/DSCF1396.jpg";
 
-import art21 from "store/model/albums-src/art2/695c66aa-255c-4c41-bd40-7cc82429fa14.jpg";
-import art22 from "store/model/albums-src/art2/890a767f-b263-4307-8679-db881505211e.jpg";
-import art23 from "store/model/albums-src/art2/5a27fc1c-14e2-407f-9aae-a67f805fcffd.jpg";
+import connoisseur1 from "store/model/albums-src/connoisseur-art/1-cover.jpg";
+import connoisseur2 from "store/model/albums-src/connoisseur-art/2.jpg";
+import connoisseur3 from "store/model/albums-src/connoisseur-art/3.jpg";
+import connoisseur4 from "store/model/albums-src/connoisseur-art/4.jpg";
+import connoisseur5 from "store/model/albums-src/connoisseur-art/5.jpg";
+import connoisseur6 from "store/model/albums-src/connoisseur-art/6.jpg";
+import connoisseur7 from "store/model/albums-src/connoisseur-art/7.jpg";
+import connoisseur8 from "store/model/albums-src/connoisseur-art/8.jpg";
+
 import art31 from "store/model/albums-src/art3/1.jpg";
 import art32 from "store/model/albums-src/art3/2.jpg";
 import art33 from "store/model/albums-src/art3/3.jpg";
@@ -270,7 +276,7 @@ const STREET_ALBUM: AlbumType[] = [
   { id: "30", src: street31 },
   { id: "31", src: street32 },
 ];
-const ART1_ALBUM: AlbumType[] = [
+const FEAR_ART_ALBUM: AlbumType[] = [
   { id: "0", src: art1 },
   { id: "1", src: art2 },
   { id: "2", src: art3 },
@@ -337,6 +343,7 @@ const FASHION_ALBUM: AlbumType[] = [
   { id: "6", src: fashion2 },
   { id: "7", src: fashion7 },
 ];
+
 const MATOKA_ALBUM: AlbumType[] = [
   { id: "0", src: matoka1 },
   { id: "1", src: matoka2 },
@@ -384,6 +391,7 @@ const MATOKA_ALBUM: AlbumType[] = [
   { id: "45", src: matoka46 },
   { id: "46", src: matoka47 },
 ];
+
 const DENTIST_ALBUM: AlbumType[] = [
   { id: "0", src: dentist1 },
   { id: "1", src: dentist2 },
@@ -426,6 +434,7 @@ const DENTIST_ALBUM: AlbumType[] = [
   { id: "38", src: dentist39 },
   { id: "39", src: dentist40 },
 ];
+
 const PARLIAMENT_ALBUM: AlbumType[] = [
   { id: "0", src: parliament1 },
   { id: "1", src: parliament2 },
@@ -450,10 +459,16 @@ const PARLIAMENT_ALBUM: AlbumType[] = [
   { id: "20", src: parliament21 },
   { id: "21", src: parliament22 },
 ];
-const ART2_ALBUM: AlbumType[] = [
-  { id: "0", src: art21 },
-  { id: "1", src: art22 },
-  { id: "2", src: art23 },
+
+const CONNOISSEUR_ART_ALBUM: AlbumType[] = [
+  { id: "0", src: connoisseur1 },
+  { id: "1", src: connoisseur2 },
+  { id: "2", src: connoisseur3 },
+  { id: "3", src: connoisseur4 },
+  { id: "4", src: connoisseur5 },
+  { id: "5", src: connoisseur6 },
+  { id: "6", src: connoisseur7 },
+  { id: "7", src: connoisseur8 },
 ];
 2;
 const ART3_ALBUM: AlbumType[] = [
@@ -484,8 +499,8 @@ export const PROJECTS: ProjectStateType[] = [
     id: "1",
     title: '"Fear" Art Photography',
     description:
-      "“Страх” - это серия фотографий, которая демонстрирует мой новый подход к теме страха. И не важно почему, важная встреча, большая покупка или переезд в другую страну. У каждого свои страхи, и я хотел передать свою личную и автобиографическую историю через эту серию фотографий.",
-    album: ART1_ALBUM,
+      '"Страх" - это серия фотографий, которая демонстрирует мой новый подход к теме страха. И не важно почему, важная встреча, большая покупка или переезд в другую страну. У каждого свои страхи, и я хотел передать свою личную и автобиографическую историю через эту серию фотографий.',
+    album: FEAR_ART_ALBUM,
     // style: {gridArea: "project2", background: "#c2f50a"},
   },
   {
@@ -546,10 +561,10 @@ export const PROJECTS: ProjectStateType[] = [
   },
   {
     id: "9",
-    title: "Art2",
+    title: '"Connoisseur" Art Photography',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
-    album: ART2_ALBUM,
+      "Этот проект о том, как люди ходят в музеи и на выставки. Мне нравится, когда люди идут на выставки с пониманием того, что они хотят увидеть и что их интересует. Посещение выставки должно быть осознанным и не только для того, чтобы потом сказать: “Я был на этой выставке, мне это понравилось”.",
+    album: CONNOISSEUR_ART_ALBUM,
     // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
