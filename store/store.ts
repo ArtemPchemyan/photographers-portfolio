@@ -4,7 +4,7 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { projectsReducer } from "@/store/projects-reducer";
 
 const rootReducer = combineReducers({
-  projects: projectsReducer,
+  photosProjects: projectsReducer,
 });
 
 export const store = configureStore({

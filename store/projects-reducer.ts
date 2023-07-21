@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { PROJECTS } from "@/store/model/projects-store";
+import { PHOTOS_PROJECTS } from "@/store/model/projects-store";
 
-const initialState = PROJECTS;
+const initialState = PHOTOS_PROJECTS;
 
 const slice = createSlice({
   name: "projects",
@@ -9,5 +9,5 @@ const slice = createSlice({
   reducers: {},
 });
 
-export const projectsReducer = slice.reducer
-export const projectsActions = slice.actions
+export const projectsReducer = slice.reducer;
+export const projectsActions = slice.actions;

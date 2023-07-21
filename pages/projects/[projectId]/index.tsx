@@ -9,7 +9,7 @@ import { ProjectPhoto } from "@/components/projects/project-photo";
 
 export default function ProjectId() {
   const projects = useAppSelector<ProjectStateType[]>(
-    (state) => state.projects
+    (state) => state.photosProjects
   );
 
   const router = useRouter();

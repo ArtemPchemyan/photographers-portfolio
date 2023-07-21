@@ -487,7 +487,7 @@ const MEAT_ALBUM: AlbumType[] = [
   { id: "2", src: meat3 },
 ];
 
-export const PROJECTS: ProjectStateType[] = [
+export const PHOTOS_PROJECTS: ProjectStateType[] = [
   {
     id: "0",
     title: "Street",

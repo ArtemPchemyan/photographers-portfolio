@@ -10,7 +10,7 @@ import { Navbar } from "@/components/navbar/navbar";
 
 export default function PhotoId() {
   const projects = useAppSelector<ProjectStateType[]>(
-    (state) => state.projects
+    (state) => state.photosProjects
   );
   const router = useRouter();
   const { projectId, photoId } = router.query;
