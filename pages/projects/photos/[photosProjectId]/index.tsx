@@ -1,21 +1,23 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { useAppSelector } from "@/store/store";
-import { ProjectStateType } from "@/store/model/projects-store";
+import { PhotosProjectsStateType } from "@/store/model/photos-projects-store";
 import { ProjectLayout } from "@/components/projects/project-layout";
 import { ProjectsTitle } from "@/components/projects/projects-title";
 import { Navbar } from "@/components/navbar/navbar";
-import { ProjectPhoto } from "@/components/projects/project-photo";
+import { PhotoProject } from "@/components/projects/photos/photo-project";
 
-export default function ProjectId() {
-  const projects = useAppSelector<ProjectStateType[]>(
+export default function PhotosProjectId() {
+  const photosProjects = useAppSelector<PhotosProjectsStateType[]>(
     (state) => state.photosProjects
   );
 
   const router = useRouter();
-  const { projectId } = router.query;
+  const { photosProjectId } = router.query;
 
-  const project = projects.find((el) => el.id === projectId);
+  debugger;
+
+  const project = photosProjects.find((el) => el.id === photosProjectId);
 
   if (project)
     return (
@@ -23,10 +25,9 @@ export default function ProjectId() {
         navbar={<Navbar />}
         title={<ProjectsTitle title={project.title} />}
         description={project.description}
-      >
-        {project.album.map((el, index) => (
-          <ProjectPhoto key={index} projectId={projectId} photo={el} />
+        photo={project.album.map((el, index) => (
+          <PhotoProject key={index} projectId={photosProjectId} photo={el} />
         ))}
-      </ProjectLayout>
+      />
     );
 }

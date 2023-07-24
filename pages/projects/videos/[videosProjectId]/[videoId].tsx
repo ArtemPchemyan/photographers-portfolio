@@ -1,15 +1,15 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { useAppSelector } from "@/store/store";
-import { ProjectStateType } from "@/store/model/projects-store";
+import { PhotosProjectsStateType } from "@/store/model/photos-projects-store";
 import { useSlider } from "@/components/projects/use-slider";
 import { animated } from "@react-spring/web";
 import { TransparentButton } from "@/components/ui-kit/transparent-button";
-import { PhotoLayout } from "@/components/projects/photo-layout";
+import { PhotoLayout } from "@/components/projects/photos/photo-layout";
 import { Navbar } from "@/components/navbar/navbar";
 
-export default function PhotoId() {
-  const projects = useAppSelector<ProjectStateType[]>(
+export default function VideoId() {
+  const projects = useAppSelector<PhotosProjectsStateType[]>(
     (state) => state.photosProjects
   );
   const router = useRouter();

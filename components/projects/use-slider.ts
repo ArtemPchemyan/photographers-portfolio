@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { AlbumType } from "@/store/model/projects-store";
+import { AlbumType } from "@/store/model/photos-projects-store";
 import { useTransition } from "@react-spring/web";
 
 export function useSlider(album: AlbumType[], photoId: number) {

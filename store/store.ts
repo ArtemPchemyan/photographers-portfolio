@@ -1,10 +1,12 @@
 import { AnyAction, combineReducers } from "redux";
 import { configureStore, ThunkDispatch } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
-import { projectsReducer } from "@/store/projects-reducer";
+import { photosProjectsReducer } from "@/store/photos-projects-reducer";
+import { videosProjectsReducer } from "@/store/videos-projects-reducer";
 
 const rootReducer = combineReducers({
-  photosProjects: projectsReducer,
+  photosProjects: photosProjectsReducer,
+  videosProjects: videosProjectsReducer,
 });
 
 export const store = configureStore({

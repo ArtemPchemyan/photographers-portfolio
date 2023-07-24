@@ -1,23 +1,32 @@
 import { ProjectsLayout } from "@/components/projects";
 import { ProjectsTitle } from "@/components/projects/projects-title";
-import { ProjectCover } from "@/components/projects/project-cover";
-import { ProjectStateType } from "@/store/model/projects-store";
+import { PhotoCover } from "@/components/projects/photos/photo-cover";
+import { PhotosProjectsStateType } from "@/store/model/photos-projects-store";
 import { useAppSelector } from "@/store/store";
 import { Navbar } from "@/components/navbar/navbar";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FilterButton } from "@/components/ui-kit/filter-button";
+import { VideosProjectsStateType } from "@/store/model/videos-projects-store";
+import { VideoCover } from "@/components/projects/videos/video-cover";
+
+type FilterType = "photos" | "videos";
 
 export default function ProjectsPage() {
-  const photosProjects = useAppSelector<ProjectStateType[]>(
+  const photosProjects = useAppSelector<PhotosProjectsStateType[]>(
     (state) => state.photosProjects
   );
+  const videosProjects = useAppSelector<VideosProjectsStateType[]>(
+    (state) => state.videosProjects
+  );
 
-  const [filter, setFilter] = useState<"photos" | "videos">("photos");
+  const [filter, setFilter] = useState<string | null>(null);
 
-  const photosProjectsView = photosProjects.map((project) => (
-    <ProjectCover key={project.id} project={project} />
+  const photosProjectsView = photosProjects.map((photo) => (
+    <PhotoCover key={photo.id} project={photo} />
   ));
-  const videosProjectsView = "HERE WILL BE VIDEOS";
+  const videosProjectsView = videosProjects.map((video) => (
+    <VideoCover key={video.id} project={video} />
+  ));
 
   const renderedProjects = () => {
     switch (filter) {
@@ -26,9 +35,14 @@ export default function ProjectsPage() {
       case "videos":
         return videosProjectsView;
       default:
-        return null;
+        return photosProjectsView;
     }
   };
+
+  useEffect(() => {
+    const filter = localStorage.getItem("filter");
+    setFilter(filter);
+  }, []);
 
   return (
     <ProjectsLayout
@@ -41,6 +55,7 @@ export default function ProjectsPage() {
             name={"photos"}
             onClick={() => {
               setFilter("photos");
+              localStorage.setItem("filter", "photos");
             }}
             side={"left"}
           />
@@ -48,6 +63,7 @@ export default function ProjectsPage() {
             name={"videos"}
             onClick={() => {
               setFilter("videos");
+              localStorage.setItem("filter", "videos");
             }}
             side={"right"}
           />

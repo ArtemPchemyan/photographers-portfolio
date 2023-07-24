@@ -226,7 +226,7 @@ import meat2 from "store/model/albums-src/meat/8c8eaf19-3f81-4bfe-a679-ee9149882
 import meat3 from "store/model/albums-src/meat/3cd99fa7-5cb4-4991-8cad-7bf562210436_rw_1920.jpg";
 import { StaticImageData } from "next/image";
 
-export type ProjectStateType = {
+export type PhotosProjectsStateType = {
   id: string;
   title: string;
   description: string;
@@ -487,7 +487,7 @@ const MEAT_ALBUM: AlbumType[] = [
   { id: "2", src: meat3 },
 ];
 
-export const PHOTOS_PROJECTS: ProjectStateType[] = [
+export const PHOTOS_PROJECTS: PhotosProjectsStateType[] = [
   {
     id: "0",
     title: "Street",
