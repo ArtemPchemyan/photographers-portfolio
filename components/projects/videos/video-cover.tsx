@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { VideosProjectsStateType } from "@/store/model/videos-projects-store";
-import fakeCover from "../../../store/model/albums-src/club/0.jpg";
 
 type PropsType = {
   project: VideosProjectsStateType;
@@ -13,7 +12,7 @@ export function VideoCover({ project }: PropsType) {
     <div className="items-center overflow-hidden ">
       <Link href={`/projects/videos/${project.id}`} className="h-full">
         <Image
-          src={fakeCover}
+          src={project.cover}
           alt={"video-cover"}
           className="object-cover object-center h-full"
         />

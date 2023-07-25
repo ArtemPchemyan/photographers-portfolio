@@ -16,8 +16,10 @@ export function ProjectsLayout({
   return (
     <div className="px-20">
       <div className="">{navbar}</div>
-      <div className="pt-24 pb-12">{title}</div>
-      <div className="flex justify-center pb-12 text-2xl">{actions}</div>
+      <div className="h-56 flex items-end">{title}</div>
+      <div className="h-32 flex justify-center items-center text-2xl">
+        {actions}
+      </div>
       <div className="grid grid-cols-3 gap-6">{projects}</div>
     </div>
   );

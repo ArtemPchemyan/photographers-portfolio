@@ -18,10 +18,10 @@ export function ProjectLayout({
   return (
     <div className="px-20">
       {navbar}
-      <div className="pt-24 pb-12">{title}</div>
+      <div className="h-56 flex items-end">{title}</div>
       <div className="pb-12">{description}</div>
       {photo && <div className="grid grid-cols-4 gap-6">{photo}</div>}
-      {video && <div className="">{video}</div>}
+      {video && <div className="grid grid-cols-2 gap-12">{video}</div>}
     </div>
   );
 }
