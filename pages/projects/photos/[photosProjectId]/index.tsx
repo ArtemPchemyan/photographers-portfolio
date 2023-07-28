@@ -15,8 +15,6 @@ export default function PhotosProjectId() {
   const router = useRouter();
   const { photosProjectId } = router.query;
 
-  debugger;
-
   const project = photosProjects.find((el) => el.id === photosProjectId);
 
   if (project)

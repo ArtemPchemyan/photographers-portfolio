@@ -16,7 +16,9 @@ export function ProjectsLayout({
   return (
     <div className="px-20">
       <div className="">{navbar}</div>
-      <div className="h-56 flex items-end">{title}</div>
+      <div className="h-56 flex items-end justify-center uppercase">
+        {title}
+      </div>
       <div className="h-32 flex justify-center items-center text-2xl">
         {actions}
       </div>
