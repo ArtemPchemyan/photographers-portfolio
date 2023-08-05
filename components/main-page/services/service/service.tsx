@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { ServiceType } from "@/components/main-page/services/services";
 
 type PropsType = {

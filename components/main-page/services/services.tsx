@@ -32,10 +32,14 @@ export const SERVICES: ServiceType[] = [
   },
 ];
 
-export function Services() {
+type PropsType = {
+  divider: ReactNode;
+};
+
+export function Services({ divider }: PropsType) {
   return (
     <div className="relative max-w-[1300px] mx-auto">
-      <Divider title={"Services"} />
+      {divider}
       <div className="flex wrap gap-16 mt-8">
         {SERVICES.map((service, index) => (
           <Service key={index} service={service} />
