@@ -1,5 +1,4 @@
 import React from "react";
-import clsx from "clsx";
 
 type PropsType = {
   title: string;
@@ -12,7 +11,8 @@ export function Skill({ title, progress }: PropsType) {
       <div className="pb-6">{title}</div>
       <div className="bg-slate-50 h-1">
         <div
-          className={`bg-orange-500 h-1 w-[${progress}%]`}
+          className="bg-orange-500 h-1"
+          style={{ width: `${progress}%` }}
           // data-value="95%"
         ></div>
       </div>

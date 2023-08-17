@@ -7,6 +7,7 @@ import { Services } from "@/components/main-page/services/services";
 import { Skills } from "@/components/main-page/skills/skills";
 import { Divider } from "@/components/ui-kit/divider";
 import { WorkDescription } from "@/components/main-page/work-description/work-description";
+import { Languages } from "@/components/main-page/languages/languages";
 
 export function ParallaxPage() {
   const parallaxLayerClassName = "w-full h-full absolute";
@@ -30,23 +31,16 @@ export function ParallaxPage() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0}>
-          <div>
-            <div className="absolute top-[20%] left-1/2 -translate-y-2/4 -translate-x-2/4 uppercase tracking-[4px] text-[0.7vw] font-semibold">
-              Hello! My name is
-            </div>
-            <div className="absolute top-[40%] left-1/2 -translate-y-2/4 -translate-x-2/4 uppercase tracking-[4px] text-[0.7vw] font-semibold">
-              Photographer & Filmmaker
-            </div>
-          </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.55} speed={0}>
           <WorkDescription />
         </ParallaxLayer>
-        <ParallaxLayer offset={2}>
+        <ParallaxLayer offset={2} speed={0.5}>
           <Services divider={<Divider title={"Services"} />} />
         </ParallaxLayer>
-        <ParallaxLayer offset={3}>
+        <ParallaxLayer offset={3} speed={0.5}>
           <Skills divider={<Divider title={"Hard Skills"} />} />
+        </ParallaxLayer>
+        <ParallaxLayer offset={4} speed={0.5}>
+          <Languages divider={<Divider title={"Languages"} />} />
         </ParallaxLayer>
       </Parallax>
     </>

@@ -38,13 +38,13 @@ type PropsType = {
 
 export function Services({ divider }: PropsType) {
   return (
-    <div className="relative max-w-[1300px] mx-auto">
+    <section className="relative max-w-[1300px] mx-auto">
       {divider}
       <div className="flex wrap gap-16 mt-8">
         {SERVICES.map((service, index) => (
           <Service key={index} service={service} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
