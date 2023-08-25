@@ -1,4 +1,4 @@
-import React, { ForwardedRef, forwardRef, LegacyRef } from "react";
+import React from "react";
 import { ServiceType } from "@/components/main-page/services/services";
 import { motion } from "framer-motion";
 

@@ -9,7 +9,7 @@ type SkillType = {
 const SKILLS: SkillType[] = [
   {
     skill: "Adobe Photoshop",
-    progress: 98,
+    progress: 99,
   },
   {
     skill: "Adobe Lightroom",
@@ -21,11 +21,11 @@ const SKILLS: SkillType[] = [
   },
   {
     skill: "DaVinci Resolve",
-    progress: 90,
+    progress: 80,
   },
   {
     skill: "Adobe After Effects",
-    progress: 80,
+    progress: 60,
   },
   {
     skill: "Adobe Audition",
@@ -39,13 +39,18 @@ type PropsType = {
 
 export function Skills({ divider }: PropsType) {
   return (
-    <section className="relative max-w-[1300px] mx-auto">
+    <>
       {divider}
       <div className="flex flex-wrap w-full pt-24 pb-16">
         {SKILLS.map((el, index) => (
-          <Skill key={index} title={el.skill} progress={el.progress} />
+          <Skill
+            key={index}
+            title={el.skill}
+            progress={el.progress}
+            index={index}
+          />
         ))}
       </div>
-    </section>
+    </>
   );
 }

@@ -17,7 +17,7 @@ export function WorkDescription({ name }: PropsType) {
         </div>
       </div>
       <div className="text-center py-36">
-        <p className="max-sm:text-sm p-8 md:text-md lg:text-lg">
+        <p className="max-sm:text-sm px-12 md:text-md lg:text-lg">
           I am a professional photographer and videographer, specializing in
           creating visual content for advertising and other purposes. I offer
           you high-quality photo and video shooting that will help you promote
