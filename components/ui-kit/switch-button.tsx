@@ -1,13 +1,7 @@
 import React, { ReactNode } from "react";
-import {
-  AnimatePresence,
-  CustomValueType,
-  motion,
-  MotionValue,
-} from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import clsx from "clsx";
 
 config.autoAddCss = false;
 
@@ -28,10 +22,8 @@ export const SwitchButton = ({ toggle, onClick, children }: PropsType) => {
   return (
     <div className="flex w-full items-center justify-center gap-8">
       <motion.h3
-        className={clsx("uppercase tracking-wide")}
-        initial={{ opacity: 0 }}
+        className="uppercase tracking-wide"
         animate={{ opacity: toggle ? 1 : 0.3 }}
-        exit={{ opacity: 0 }}
         transition={spring}
       >
         Photo
@@ -46,25 +38,12 @@ export const SwitchButton = ({ toggle, onClick, children }: PropsType) => {
           className="h-12 w-12 rounded-full grid items-center justify-center bg-white overflow-hidden shadow-inset"
           transition={spring}
         >
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.div
-              className={""}
-              key={toggle ? "photos" : "videos"}
-              initial={{ x: toggle ? 30 : -30, opacity: 0 }}
-              animate={{ x: toggle ? 0 : 0, opacity: 1 }}
-              exit={{ x: toggle ? 30 : -30, opacity: 0 }}
-              transition={{ duration: 0 }}
-            >
-              {children}
-            </motion.div>
-          </AnimatePresence>
+          {children}
         </motion.div>
       </div>
       <motion.h3
         className="uppercase tracking-wide"
-        initial={{ opacity: 0 }}
         animate={{ opacity: toggle ? 0.3 : 1 }}
-        exit={{ opacity: 0 }}
         transition={spring}
       >
         Video

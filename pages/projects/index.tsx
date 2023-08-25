@@ -4,14 +4,13 @@ import { PhotoCover } from "@/components/projects/photos/photo-cover";
 import { PhotosProjectsStateType } from "@/store/model/photos-projects-store";
 import { useAppSelector } from "@/store/store";
 import { Navbar } from "@/components/navbar/navbar";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { VideosProjectsStateType } from "@/store/model/videos-projects-store";
 import { VideoCover } from "@/components/projects/videos/video-cover";
 import { SwitchButton } from "@/components/ui-kit/switch-button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImage } from "@fortawesome/free-solid-svg-icons/faImage";
 import { faVideo } from "@fortawesome/free-solid-svg-icons/faVideo";
-import { useMotionValue, useTransform, motion } from "framer-motion";
 
 export default function ProjectsPage() {
   const photosProjects = useAppSelector<PhotosProjectsStateType[]>(

@@ -3,14 +3,13 @@ import { Service } from "@/components/main-page/services/service/service";
 import { AdIcon } from "@/components/ui-kit/icons/ad-icon";
 import { VideoCameraIcon } from "@/components/ui-kit/icons/videocamera-icon";
 import { PersonIcon } from "@/components/ui-kit/icons/person-icon";
-import { Divider } from "@/components/ui-kit/divider";
 
 export type ServiceType = {
   icon: ReactNode;
   title: string;
   description: string;
 };
-export const iconsClassName = "w-20 h-20 ";
+export const iconsClassName = "w-20 h-20";
 export const SERVICES: ServiceType[] = [
   {
     icon: <AdIcon className={iconsClassName} />,
