@@ -31,6 +31,7 @@ export const Service = ({ service, index }: PropsType) => {
       initial="hidden"
       whileInView="visible"
       custom={index}
+      viewport={{ amount: 0.3, once: true }}
     >
       {service.icon}
       <h5 className="text-xl font-medium py-6">{service.title}</h5>

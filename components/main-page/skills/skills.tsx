@@ -41,7 +41,7 @@ export function Skills({ divider }: PropsType) {
   return (
     <>
       {divider}
-      <div className="flex flex-wrap w-full pt-24 pb-16">
+      <div className="flex flex-wrap max-lg:flex-col w-full pt-24 pb-24">
         {SKILLS.map((el, index) => (
           <Skill
             key={index}

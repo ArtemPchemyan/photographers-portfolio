@@ -27,13 +27,18 @@ type PropsType = {
 
 export function Languages({ divider }: PropsType) {
   return (
-    <section className="relative max-w-[1300px] mx-auto">
+    <>
       {divider}
-      <div className="flex flex-wrap justify-between w-full pt-24 pb-16">
+      <div className="flex flex-wrap max-sm:flex-col justify-between w-full pt-24 pb-16">
         {LANGUAGES.map((el, index) => (
-          <Language key={index} language={el.language} progress={el.progress} />
+          <Language
+            key={index}
+            language={el.language}
+            progress={el.progress}
+            index={index}
+          />
         ))}
       </div>
-    </section>
+    </>
   );
 }

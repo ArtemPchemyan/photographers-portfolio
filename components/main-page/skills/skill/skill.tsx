@@ -25,24 +25,23 @@ export function Skill({ title, progress, index }: PropsType) {
 
   const progressAnimation = {
     start: {
-      background: "rgb(187,187,187)",
       width: 0,
     },
     completed: {
-      background: "rgb(249 115 22)",
       width: `${progress}%`,
       transition: {
-        duration: 0.5,
+        duration: 0.75,
       },
     },
   };
   return (
     <motion.div
-      className="w-1/2 px-6 mb-6"
+      className="w-1/2 max-lg:w-full px-6 mb-6"
       variants={skillAnimation}
       initial={"hidden"}
       whileInView={"visible"}
       custom={index}
+      viewport={{ amount: 0.3, once: true }}
     >
       <div className="pb-6">{title}</div>
       <div className="bg-slate-50 h-1">
@@ -51,6 +50,7 @@ export function Skill({ title, progress, index }: PropsType) {
           variants={progressAnimation}
           initial={"start"}
           whileInView={"completed"}
+          viewport={{ once: true }}
         ></motion.div>
       </div>
     </motion.div>
