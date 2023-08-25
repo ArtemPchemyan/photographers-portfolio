@@ -3,6 +3,7 @@ import { Service } from "@/components/main-page/services/service/service";
 import { AdIcon } from "@/components/ui-kit/icons/ad-icon";
 import { VideoCameraIcon } from "@/components/ui-kit/icons/videocamera-icon";
 import { PersonIcon } from "@/components/ui-kit/icons/person-icon";
+import { motion } from "framer-motion";
 
 export type ServiceType = {
   icon: ReactNode;
@@ -37,13 +38,13 @@ type PropsType = {
 
 export function Services({ divider }: PropsType) {
   return (
-    <section className="relative max-w-[1300px] mx-auto">
+    <>
       {divider}
-      <div className="flex wrap gap-16 mt-8">
+      <motion.div className="flex wrap gap-16 mt-8 max-lg:flex-col">
         {SERVICES.map((service, index) => (
-          <Service key={index} service={service} />
+          <Service key={index} service={service} index={index} />
         ))}
-      </div>
-    </section>
+      </motion.div>
+    </>
   );
 }

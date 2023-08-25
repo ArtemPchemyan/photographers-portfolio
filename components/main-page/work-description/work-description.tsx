@@ -1,18 +1,23 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-export function WorkDescription() {
+type PropsType = {
+  name: ReactNode;
+};
+
+export function WorkDescription({ name }: PropsType) {
   return (
-    <div>
-      <div>
-        <div className="absolute top-[20%] left-1/2 -translate-y-2/4 -translate-x-2/4 uppercase tracking-[4px] text-[0.7vw] font-semibold">
+    <>
+      <div className="flex flex-col justify-between items-center h-[45%]">
+        <div className="uppercase tracking-[4px] max-sm:text-[2vw] md:text-[1.5vw] lg:text-[1vw] font-semibold">
           Hello! My name is
         </div>
-        <div className="absolute top-[40%] left-1/2 -translate-y-2/4 -translate-x-2/4 uppercase tracking-[4px] text-[0.7vw] font-semibold">
+        {name}
+        <div className="uppercase tracking-[4px] max-sm:text-[2vw] md:text-[1.5vw] lg:text-[1vw] font-semibold">
           Photographer & Filmmaker
         </div>
       </div>
-      <div className="absolute top-[55%] left-1/2 -translate-x-2/4 text-center">
-        <p className="">
+      <div className="text-center py-36">
+        <p className="max-sm:text-sm p-8 md:text-md lg:text-lg">
           I am a professional photographer and videographer, specializing in
           creating visual content for advertising and other purposes. I offer
           you high-quality photo and video shooting that will help you promote
@@ -28,6 +33,6 @@ export function WorkDescription() {
           models, and other tasks.
         </p>
       </div>
-    </div>
+    </>
   );
 }
