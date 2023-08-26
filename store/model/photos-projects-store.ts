@@ -213,17 +213,39 @@ import connoisseur6 from "store/model/albums-src/connoisseur-art/6.jpg";
 import connoisseur7 from "store/model/albums-src/connoisseur-art/7.jpg";
 import connoisseur8 from "store/model/albums-src/connoisseur-art/8.jpg";
 
-import art31 from "store/model/albums-src/art3/1.jpg";
-import art32 from "store/model/albums-src/art3/2.jpg";
-import art33 from "store/model/albums-src/art3/3.jpg";
+import modern1 from "store/model/albums-src/modern-art/1.jpg";
+import modern2 from "store/model/albums-src/modern-art/2.jpg";
+import modern3 from "store/model/albums-src/modern-art/3.jpg";
 
-import cilantro1 from "store/model/albums-src/cilantro/0ef1636e-eb28-4cfd-9867-106f90606c5c_rw_1920.jpg";
-import cilantro2 from "store/model/albums-src/cilantro/5f8d4a9d-2626-49f9-8156-fc1316898723_rw_1920.jpg";
-import cilantro3 from "store/model/albums-src/cilantro/5b8e49ec-7904-477e-8ade-2c4ebc5173b3_rw_1920.jpg";
+import kinza1 from "store/model/albums-src/kinza/cover.jpg";
+import kinza2 from "store/model/albums-src/kinza/1.jpg";
+import kinza3 from "store/model/albums-src/kinza/2.jpg";
+import kinza4 from "store/model/albums-src/kinza/3.jpg";
+import kinza5 from "store/model/albums-src/kinza/4.jpg";
+import kinza6 from "store/model/albums-src/kinza/5.jpg";
+import kinza7 from "store/model/albums-src/kinza/6.jpg";
+import kinza8 from "store/model/albums-src/kinza/7.jpg";
+import kinza9 from "store/model/albums-src/kinza/8.jpg";
+import kinza10 from "store/model/albums-src/kinza/9.jpg";
+import kinza11 from "store/model/albums-src/kinza/10.jpg";
+import kinza12 from "store/model/albums-src/kinza/11.jpg";
+import kinza13 from "store/model/albums-src/kinza/12.jpg";
+import kinza14 from "store/model/albums-src/kinza/13.jpg";
+import kinza15 from "store/model/albums-src/kinza/14.jpg";
+import kinza16 from "store/model/albums-src/kinza/15.jpg";
+import kinza17 from "store/model/albums-src/kinza/16.jpg";
+import kinza18 from "store/model/albums-src/kinza/17.jpg";
+import kinza19 from "store/model/albums-src/kinza/18.jpg";
 
 import meat1 from "store/model/albums-src/meat/5eda0d6e-5c27-4955-bcc2-22e18c6c0368.jpg";
 import meat2 from "store/model/albums-src/meat/8c8eaf19-3f81-4bfe-a679-ee9149882f1b_rw_1920.jpg";
 import meat3 from "store/model/albums-src/meat/3cd99fa7-5cb4-4991-8cad-7bf562210436_rw_1920.jpg";
+import meat4 from "store/model/albums-src/meat/57b137c5-71c1-44c3-816b-ecc1772c70e5.jpg";
+import meat5 from "store/model/albums-src/meat/108b3588-d2ff-430e-aad9-65490389a55e.jpg";
+import meat6 from "store/model/albums-src/meat/647a17b1-ae45-477f-97f5-c0df44fba1a2_rw_1920.jpg";
+import meat7 from "store/model/albums-src/meat/678a5b03-363e-4d6f-86ae-d6f0cceb9b92_rw_1920.jpg";
+import meat8 from "store/model/albums-src/meat/0829683a-2354-4ee9-b668-3f96597d8b92_rw_1920.jpg";
+import meat9 from "store/model/albums-src/meat/d7496843-27b5-48af-807b-b980ba9adb9d_rw_1920.jpg";
 import { StaticImageData } from "next/image";
 
 export type PhotosProjectsStateType = {
@@ -343,7 +365,6 @@ const FASHION_ALBUM: AlbumType[] = [
   { id: "6", src: fashion2 },
   { id: "7", src: fashion7 },
 ];
-
 const MATOKA_ALBUM: AlbumType[] = [
   { id: "0", src: matoka1 },
   { id: "1", src: matoka2 },
@@ -357,41 +378,40 @@ const MATOKA_ALBUM: AlbumType[] = [
   { id: "9", src: matoka10 },
   { id: "10", src: matoka11 },
   { id: "11", src: matoka12 },
-  { id: "14", src: matoka15 },
-  { id: "15", src: matoka16 },
-  { id: "16", src: matoka17 },
-  { id: "17", src: matoka18 },
-  { id: "18", src: matoka19 },
-  { id: "19", src: matoka20 },
-  { id: "20", src: matoka21 },
-  { id: "21", src: matoka22 },
-  { id: "22", src: matoka23 },
-  { id: "23", src: matoka24 },
-  { id: "24", src: matoka25 },
-  { id: "25", src: matoka26 },
-  { id: "26", src: matoka27 },
-  { id: "27", src: matoka28 },
-  { id: "28", src: matoka29 },
-  { id: "29", src: matoka30 },
-  { id: "30", src: matoka31 },
-  { id: "31", src: matoka32 },
-  { id: "32", src: matoka33 },
-  { id: "33", src: matoka34 },
-  { id: "34", src: matoka35 },
-  { id: "35", src: matoka36 },
-  { id: "36", src: matoka37 },
-  { id: "37", src: matoka38 },
-  { id: "38", src: matoka39 },
-  { id: "39", src: matoka40 },
-  { id: "40", src: matoka41 },
-  { id: "41", src: matoka42 },
-  { id: "42", src: matoka43 },
-  { id: "43", src: matoka44 },
-  { id: "44", src: matoka45 },
-  { id: "45", src: matoka46 },
-  { id: "46", src: matoka47 },
+  { id: "12", src: matoka15 },
+  { id: "13", src: matoka16 },
+  { id: "14", src: matoka17 },
+  { id: "15", src: matoka18 },
+  { id: "16", src: matoka19 },
+  { id: "17", src: matoka20 },
+  { id: "18", src: matoka21 },
+  { id: "19", src: matoka22 },
+  { id: "20", src: matoka23 },
+  { id: "21", src: matoka24 },
+  { id: "22", src: matoka25 },
+  { id: "23", src: matoka26 },
+  { id: "24", src: matoka27 },
+  { id: "25", src: matoka28 },
+  { id: "26", src: matoka29 },
+  { id: "27", src: matoka30 },
+  { id: "28", src: matoka31 },
+  { id: "29", src: matoka32 },
+  { id: "30", src: matoka33 },
+  { id: "31", src: matoka34 },
+  { id: "32", src: matoka35 },
+  { id: "33", src: matoka36 },
+  { id: "34", src: matoka37 },
+  { id: "35", src: matoka38 },
+  { id: "36", src: matoka39 },
+  { id: "37", src: matoka40 },
+  { id: "38", src: matoka41 },
+  { id: "39", src: matoka42 },
+  { id: "40", src: matoka43 },
+  { id: "41", src: matoka44 },
+  { id: "42", src: matoka45 },
+  { id: "43", src: matoka46 },
+  { id: "44", src: matoka47 },
 ];
-
 const DENTIST_ALBUM: AlbumType[] = [
   { id: "0", src: dentist1 },
   { id: "1", src: dentist2 },
@@ -434,7 +454,6 @@ const DENTIST_ALBUM: AlbumType[] = [
   { id: "38", src: dentist39 },
   { id: "39", src: dentist40 },
 ];
-
 const PARLIAMENT_ALBUM: AlbumType[] = [
   { id: "0", src: parliament1 },
   { id: "1", src: parliament2 },
@@ -459,7 +478,6 @@ const PARLIAMENT_ALBUM: AlbumType[] = [
   { id: "20", src: parliament21 },
   { id: "21", src: parliament22 },
 ];
-
 const CONNOISSEUR_ART_ALBUM: AlbumType[] = [
   { id: "0", src: connoisseur1 },
   { id: "1", src: connoisseur2 },
@@ -470,21 +488,42 @@ const CONNOISSEUR_ART_ALBUM: AlbumType[] = [
   { id: "6", src: connoisseur7 },
   { id: "7", src: connoisseur8 },
 ];
-2;
-const ART3_ALBUM: AlbumType[] = [
-  { id: "0", src: art31 },
-  { id: "1", src: art32 },
-  { id: "2", src: art33 },
+const MODERN_ART_ALBUM: AlbumType[] = [
+  { id: "0", src: modern1 },
+  { id: "1", src: modern2 },
+  { id: "2", src: modern3 },
 ];
-const CILANTRO_ALBUM: AlbumType[] = [
-  { id: "0", src: cilantro1 },
-  { id: "1", src: cilantro2 },
-  { id: "2", src: cilantro3 },
+const KINZA_ALBUM: AlbumType[] = [
+  { id: "0", src: kinza1 },
+  { id: "1", src: kinza2 },
+  { id: "2", src: kinza3 },
+  { id: "3", src: kinza4 },
+  { id: "4", src: kinza5 },
+  { id: "5", src: kinza6 },
+  { id: "6", src: kinza7 },
+  { id: "7", src: kinza8 },
+  { id: "8", src: kinza9 },
+  { id: "9", src: kinza10 },
+  { id: "10", src: kinza11 },
+  { id: "11", src: kinza12 },
+  { id: "12", src: kinza13 },
+  { id: "13", src: kinza14 },
+  { id: "14", src: kinza15 },
+  { id: "15", src: kinza16 },
+  { id: "16", src: kinza17 },
+  { id: "17", src: kinza18 },
+  { id: "18", src: kinza19 },
 ];
 const MEAT_ALBUM: AlbumType[] = [
   { id: "0", src: meat1 },
   { id: "1", src: meat2 },
   { id: "2", src: meat3 },
+  { id: "3", src: meat4 },
+  { id: "4", src: meat5 },
+  { id: "5", src: meat6 },
+  { id: "6", src: meat7 },
+  { id: "7", src: meat8 },
+  { id: "8", src: meat9 },
 ];
 
 export const PHOTOS_PROJECTS: PhotosProjectsStateType[] = [
@@ -545,10 +584,10 @@ export const PHOTOS_PROJECTS: PhotosProjectsStateType[] = [
   },
   {
     id: "7",
-    title: "Cilantro",
+    title: "Kinza",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
-    album: CILANTRO_ALBUM,
+    album: KINZA_ALBUM,
     // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
@@ -569,15 +608,15 @@ export const PHOTOS_PROJECTS: PhotosProjectsStateType[] = [
   },
   {
     id: "10",
-    title: "Art3",
+    title: '"Modern" Art Photography',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
-    album: ART3_ALBUM,
+    album: MODERN_ART_ALBUM,
     // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
     id: "11",
-    title: "Meat",
+    title: "Myasorubka",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
     album: MEAT_ALBUM,

@@ -19,7 +19,7 @@ export function Name() {
       className="w-screen text-center px-8 py-4"
       initial="start"
       whileInView="completed"
-      viewport={{ amount: 0.3 }}
+      viewport={{ amount: 0.3, once: true }}
     >
       <motion.h1
         className="text-[6vw] font-semibold uppercase tracking-[12px] text-white max-sm:text-[7vw]"

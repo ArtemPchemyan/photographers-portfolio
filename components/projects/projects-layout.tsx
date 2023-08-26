@@ -14,15 +14,17 @@ export function ProjectsLayout({
   actions,
 }: PropsType) {
   return (
-    <div className="px-20">
+    <div className="px-20 pb-20 max-sm:px-10">
       <div className="">{navbar}</div>
-      <div className="h-56 flex items-end justify-center uppercase">
+      <div className="pt-24 flex items-end justify-center uppercase">
         {title}
       </div>
       <div className="h-32 flex justify-center items-center text-2xl">
         {actions}
       </div>
-      <div className="grid grid-cols-3 gap-6">{projects}</div>
+      <div className="grid grid-cols-3 gap-16 max-md:grid-cols-1 max-lg:gap-10 max-xl:gap-7 max-lg:grid-cols-2">
+        {projects}
+      </div>
     </div>
   );
 }

@@ -22,14 +22,6 @@ export default function ProjectsPage() {
 
   const [isPhotoFilter, setIsPhotoFilter] = useState(true);
 
-  // const x = useMotionValue(0);
-  // const xInput = [-100, 0, 100];
-  // const background = useTransform(x, xInput, [
-  //   "radial-gradient(#626262FF, #131313FF 50%",
-  //   "radial-gradient(#626262FF, #131313FF 50%",
-  //   "radial-gradient(#181818FF, #626262FF 100%)",
-  // ]);
-
   const photosProjectsView = photosProjects.map((photo) => (
     <PhotoCover key={photo.id} project={photo} />
   ));
@@ -48,7 +40,6 @@ export default function ProjectsPage() {
   }, []);
 
   return (
-    // <motion.div style={{ background }}>
     <ProjectsLayout
       navbar={<Navbar />}
       title={<ProjectsTitle title={"Projects"} />}
@@ -63,7 +54,6 @@ export default function ProjectsPage() {
           />
         </SwitchButton>
       }
-    ></ProjectsLayout>
-    // </motion.div>
+    />
   );
 }

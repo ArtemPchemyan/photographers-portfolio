@@ -11,7 +11,10 @@ type PropsType = {
 export function PhotoProject({ projectId, photo }: PropsType) {
   return (
     <div className="items-center overflow-hidden ">
-      <Link href={`/projects/${projectId}/${photo.id}`} className="h-full">
+      <Link
+        href={`/projects/photos/${projectId}/${photo.id}`}
+        className="h-full"
+      >
         <Image
           src={photo.src}
           alt={"img"}

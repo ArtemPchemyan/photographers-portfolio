@@ -13,9 +13,9 @@ export default function PhotosProjectId() {
   );
 
   const router = useRouter();
-  const { photosProjectId } = router.query;
+  const { projectId } = router.query;
 
-  const project = photosProjects.find((el) => el.id === photosProjectId);
+  const project = photosProjects.find((el) => el.id === projectId);
 
   if (project)
     return (
@@ -24,7 +24,7 @@ export default function PhotosProjectId() {
         title={<ProjectsTitle title={project.title} />}
         description={project.description}
         photo={project.album.map((el, index) => (
-          <PhotoProject key={index} projectId={photosProjectId} photo={el} />
+          <PhotoProject key={index} projectId={projectId} photo={el} />
         ))}
       />
     );
