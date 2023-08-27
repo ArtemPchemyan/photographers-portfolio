@@ -22,7 +22,7 @@ export function ProjectsLayout({
       <div className="h-32 flex justify-center items-center text-2xl">
         {actions}
       </div>
-      <div className="grid grid-cols-3 gap-16 max-md:grid-cols-1 max-lg:gap-10 max-xl:gap-7 max-lg:grid-cols-2">
+      <div className="grid grid-cols-3 gap-16 max-md:grid-cols-1 max-lg:gap-10 max-lg:grid-cols-2 max-xl:gap-7">
         {projects}
       </div>
     </div>

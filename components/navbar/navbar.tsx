@@ -31,7 +31,7 @@ export function Navbar() {
 
   const size = useWindowSize();
 
-  if (size.width < 600) {
+  if (size.width && size.width < 600) {
     return (
       <NavbarLayout
         menuButton={

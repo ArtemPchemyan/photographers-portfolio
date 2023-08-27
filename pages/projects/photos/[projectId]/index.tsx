@@ -5,7 +5,7 @@ import { PhotosProjectsStateType } from "@/store/model/photos-projects-store";
 import { ProjectLayout } from "@/components/projects/project-layout";
 import { ProjectsTitle } from "@/components/projects/projects-title";
 import { Navbar } from "@/components/navbar/navbar";
-import { PhotoProject } from "@/components/projects/photos/photo-project";
+import { Photo } from "@/components/projects/photos/photo";
 
 export default function PhotosProjectId() {
   const photosProjects = useAppSelector<PhotosProjectsStateType[]>(
@@ -24,7 +24,7 @@ export default function PhotosProjectId() {
         title={<ProjectsTitle title={project.title} />}
         description={project.description}
         photo={project.album.map((el, index) => (
-          <PhotoProject key={index} projectId={projectId} photo={el} />
+          <Photo key={index} projectId={projectId} photo={el} index={index} />
         ))}
       />
     );

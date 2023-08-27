@@ -16,12 +16,20 @@ export function ProjectLayout({
   video,
 }: PropsType) {
   return (
-    <div className="px-20">
+    <div className="max-[550px]:px-10 px-20">
       {navbar}
       <div className="h-56 flex items-end">{title}</div>
       <div className="pb-12">{description}</div>
-      {photo && <div className="grid grid-cols-4 gap-6">{photo}</div>}
-      {video && <div className="grid grid-cols-2 gap-12">{video}</div>}
+      {photo && (
+        <div className="gap-6 grid md:grid-cols-3 lg:grid-cols-4 2xl:gap-24">
+          {photo}
+        </div>
+      )}
+      {video && (
+        <div className="gap-6 grid md:grid-cols-3 lg:grid-cols-4 2xl:gap-24">
+          {video}
+        </div>
+      )}
     </div>
   );
 }

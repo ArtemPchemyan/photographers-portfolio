@@ -22,11 +22,11 @@ export default function ProjectsPage() {
 
   const [isPhotoFilter, setIsPhotoFilter] = useState(true);
 
-  const photosProjectsView = photosProjects.map((photo) => (
-    <PhotoCover key={photo.id} project={photo} />
+  const photosProjectsView = photosProjects.map((photo, index) => (
+    <PhotoCover key={photo.id} project={photo} index={index} />
   ));
-  const videosProjectsView = videosProjects.map((video) => (
-    <VideoCover key={video.id} project={video} />
+  const videosProjectsView = videosProjects.map((video, index) => (
+    <VideoCover key={video.id} project={video} index={index} />
   ));
 
   const handleClickOnSwitch = () => {
@@ -49,8 +49,8 @@ export default function ProjectsPage() {
           <FontAwesomeIcon
             icon={isPhotoFilter ? faImage : faVideo}
             style={{ color: "#1d1d1d" }}
-            width={26}
-            height={26}
+            width={22}
+            height={22}
           />
         </SwitchButton>
       }

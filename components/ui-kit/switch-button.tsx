@@ -29,13 +29,13 @@ export const SwitchButton = ({ toggle, onClick, children }: PropsType) => {
         Photo
       </motion.h3>
       <div
-        className="h-16 w-36 bg-radial rounded-full flex items-center box-border px-1 cursor-pointer transition-all inline-block px-3 shadow-inset"
+        className="h-14 w-32 bg-default-bg rounded-full flex items-center box-border px-1 cursor-pointer transition-all inline-block px-3 shadow-inset border-2 border-light-grey"
         onClick={onClick}
         style={{ justifyContent: toggle ? "flex-start" : "flex-end" }}
       >
         <motion.div
           layout
-          className="h-12 w-12 rounded-full grid items-center justify-center bg-white overflow-hidden shadow-inset"
+          className="h-9 w-9 rounded-full grid items-center justify-center bg-white overflow-hidden shadow-inset"
           transition={spring}
         >
           {children}
