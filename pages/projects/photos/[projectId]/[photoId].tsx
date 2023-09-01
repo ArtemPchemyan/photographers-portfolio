@@ -17,7 +17,6 @@ export default function PhotoId() {
 
   const project = projects.find((el) => el.id === projectId);
   const album = project?.album;
-  console.log(projectId);
 
   const { transitions, activeIndex, setActiveIndex } = useSlider(
     album ?? [],

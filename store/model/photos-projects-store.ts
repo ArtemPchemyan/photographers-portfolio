@@ -532,94 +532,71 @@ export const PHOTOS_PROJECTS: PhotosProjectsStateType[] = [
     title: "Street",
     description: "",
     album: STREET_ALBUM,
-    // style: {gridArea: "project1", background: "#ffc504"},
   },
   {
     id: "1",
     title: '"Fear" Art Photography',
-    description:
-      '"Страх" - это серия фотографий, которая демонстрирует мой новый подход к теме страха. И не важно почему, важная встреча, большая покупка или переезд в другую страну. У каждого свои страхи, и я хотел передать свою личную и автобиографическую историю через эту серию фотографий.',
+    description: "",
     album: FEAR_ART_ALBUM,
-    // style: {gridArea: "project2", background: "#c2f50a"},
   },
   {
     id: "2",
     title: "Clubs",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
+    description: "",
     album: CLUB_ALBUM,
-    // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
     id: "3",
     title: "Exibition",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
+    description: "",
     album: EXIBITION_ALBUM,
-    // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
     id: "4",
     title: "Fashion",
-    description:
-      "Портреты для модельного агентства. В этом проекте мне было необходимо создать атмосферу компейнов модных домов, таких как Valentino, Versace, Calvin Klein. Была проделана колоссальная работа по поиску референсов, среди вышеуказанных модных домов.",
+    description: "",
     album: FASHION_ALBUM,
-    // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
     id: "5",
     title: "Matoka",
-    description:
-      'Это большой коммерческий проект включающий в себя как фотографии так и видео, как съёмки в Праге, так и "командировку" в Карловы Вары, как работу по готовому ТЗ, так полностью спродюсированные мною съёмки. Большая часть работы это мои идеи и мое видение этого проекта.',
+    description: "",
     album: MATOKA_ALBUM,
-    // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
     id: "6",
     title: '"Doctor"',
-    description:
-      "Подготовка к съемки состояла в поисках референсов, и выбор стилистики съемки вместе с заказчиком.\n",
+    description: "",
     album: DENTIST_ALBUM,
-    // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
     id: "7",
     title: "Kinza",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
+    description: "",
     album: KINZA_ALBUM,
-    // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
     id: "8",
     title: "Parliament",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
+    description: "",
     album: PARLIAMENT_ALBUM,
-    // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
     id: "9",
     title: '"Connoisseur" Art Photography',
-    description:
-      "Этот проект о том, как люди ходят в музеи и на выставки. Мне нравится, когда люди идут на выставки с пониманием того, что они хотят увидеть и что их интересует. Посещение выставки должно быть осознанным и не только для того, чтобы потом сказать: “Я был на этой выставке, мне это понравилось”.",
+    description: "",
     album: CONNOISSEUR_ART_ALBUM,
-    // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
     id: "10",
     title: '"Modern" Art Photography',
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
+    description: "",
     album: MODERN_ART_ALBUM,
-    // style: {gridArea: "project3", background: "#77c7c8"},
   },
   {
     id: "11",
     title: "Myasorubka",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sedsuscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo, nobis quidem repellat sed suscipit.",
+    description: "",
     album: MEAT_ALBUM,
-    // style: {gridArea: "project3", background: "#77c7c8"},
   },
 ];

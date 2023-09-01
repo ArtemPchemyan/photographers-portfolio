@@ -11,22 +11,21 @@ type PropsType = {
 };
 
 export function PhotoCover({ project, index }: PropsType) {
-  const { coverAnimation, hidden, visible, hover } = useAnimation();
+  const { coverAnimation, hidden, visible } = useAnimation();
   return (
     <AnimatePresence>
       <motion.div
-        className="overflow-hidden flex flex-col items-center"
+        className="overflow-hidden flex flex-col items-center hover:scale-110 ease-out duration-500"
         variants={coverAnimation}
         initial={hidden}
         whileInView={visible(index)}
-        // whileHover={hover}
         viewport={{ once: true }}
       >
         <Link href={`/projects/photos/${project.id}`} className="h-full">
           <Image
             src={project.album[0].src}
             alt={"photo-cover"}
-            className="object-cover object-center h-full hover:scale-110 ease-out duration-500"
+            className="object-cover object-center h-full"
           />
         </Link>
         <Link href={`/projects/photos/${project.id}`}>
