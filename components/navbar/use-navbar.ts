@@ -36,7 +36,7 @@ export function useNavbar(menuItems: MenuItemsType[], isOpen: boolean) {
   });
   const popupMenu = useSpring({
     config: {
-      duration: 100,
+      duration: 200,
     },
     from: {
       height: "0px",

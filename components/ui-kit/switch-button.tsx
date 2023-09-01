@@ -20,16 +20,18 @@ export const SwitchButton = ({ toggle, onClick, children }: PropsType) => {
   };
 
   return (
-    <div className="flex w-full items-center justify-center gap-8">
-      <motion.h3
-        className="uppercase tracking-wide"
+    <div className="flex w-full items-center justify-center gap-6">
+      <motion.button
+        className="uppercase tracking-wide max-lg:text-xl"
         animate={{ opacity: toggle ? 1 : 0.3 }}
         transition={spring}
+        onClick={onClick}
+        disabled={toggle === true}
       >
         Photo
-      </motion.h3>
+      </motion.button>
       <div
-        className="h-14 w-32 bg-default-bg rounded-full flex items-center box-border px-1 cursor-pointer transition-all inline-block px-3 shadow-inset border-2 border-light-grey"
+        className="h-14 w-32 bg-default-bg rounded-full flex items-center box-border px-1 cursor-pointer transition-all inline-block px-2 shadow-inset border-2 border-light-grey"
         onClick={onClick}
         style={{ justifyContent: toggle ? "flex-start" : "flex-end" }}
       >
@@ -41,13 +43,15 @@ export const SwitchButton = ({ toggle, onClick, children }: PropsType) => {
           {children}
         </motion.div>
       </div>
-      <motion.h3
-        className="uppercase tracking-wide"
+      <motion.button
+        className="uppercase tracking-wide max-lg:text-xl"
         animate={{ opacity: toggle ? 0.3 : 1 }}
         transition={spring}
+        onClick={onClick}
+        disabled={toggle === false}
       >
         Video
-      </motion.h3>
+      </motion.button>
     </div>
   );
 };

@@ -19,7 +19,7 @@ export function ProjectsLayout({
       <div className="pt-24 flex items-end justify-center uppercase">
         {title}
       </div>
-      <div className="h-32 flex justify-center items-center text-2xl">
+      <div className="pt-10 pb-16 flex justify-center items-center text-2xl">
         {actions}
       </div>
       <div className="grid grid-cols-3 gap-16 max-md:grid-cols-1 max-lg:gap-10 max-lg:grid-cols-2 max-xl:gap-7">

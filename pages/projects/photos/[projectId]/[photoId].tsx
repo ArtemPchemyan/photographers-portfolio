@@ -49,9 +49,7 @@ export default function PhotoId() {
           style={style}
           src={item.src.src}
           alt="albumPhoto"
-          className={
-            "absolute inset-0 h-full object-cover object-center mx-auto"
-          }
+          className={"absolute inset-0 m-auto h-auto"}
         ></animated.img>
       ))}
     </PhotoLayout>

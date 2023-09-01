@@ -11,20 +11,21 @@ type PropsType = {
 };
 
 export function VideoCover({ project, index }: PropsType) {
-  const { coverAnimation, hidden, visible } = useAnimation();
+  const { coverAnimation, hidden, visible, hover } = useAnimation();
   return (
     <motion.div
       className="items-center overflow-hidden "
       variants={coverAnimation}
       initial={hidden}
       whileInView={visible(index)}
+      // whileHover={hover}
       viewport={{ once: true }}
     >
       <Link href={`/projects/videos/${project.id}`} className="h-full">
         <Image
           src={project.cover}
           alt={"video-cover"}
-          className="object-cover object-center h-full"
+          className="object-cover object-center h-full hover:scale-110 ease-out duration-500"
         />
         <h2>{project.title}</h2>
       </Link>
