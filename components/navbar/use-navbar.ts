@@ -1,63 +1,59 @@
-import { useSpring, useTrail } from "@react-spring/web";
-import { MenuItemsType } from "@/components/navbar/navbar";
-
-export function useNavbar(menuItems: MenuItemsType[], isOpen: boolean) {
-  const animation = useTrail(menuItems.length, {
-    config: {
-      mass: 3,
-      tension: 2000,
-      friction: 200,
-    },
-    from: {
+export function useNavbar(isOpen: boolean) {
+  const animation = {
+    hidden: {
       transform: "translateY(-200px)",
-      opacity: 0,
     },
-    to: {
+    visible: (custom: number) => ({
       transform: isOpen ? "translateY(0px)" : "translateY(-200px)",
-      opacity: 1,
-    },
-  });
-  const animationForMobileScreen = useTrail(menuItems.length, {
-    config: {
-      mass: 3,
-      tension: 2000,
-      friction: 200,
-      duration: 200,
-    },
-    from: {
+      transition: {
+        type: "spring",
+        mass: 0.5,
+        duration: 0.2,
+        delay: custom * 0.1,
+      },
+    }),
+  };
+  const animationForMobileScreen = {
+    hidden: {
       transform: "scale(0)",
       display: "none",
+      opacity: 0,
     },
-    to: {
+    visible: (custom: number) => ({
       transform: isOpen ? "scale(1)" : "scale(0)",
       opacity: 1,
       display: isOpen ? "inline-block" : "none",
-    },
-  });
-  const popupMenu = useSpring({
-    config: {
-      duration: 200,
-    },
-    from: {
+      transition: {
+        type: "spring",
+        duration: 0.2,
+        delay: custom * 0.1,
+      },
+    }),
+  };
+  const popupMenu = {
+    hidden: {
       height: "0px",
     },
-    to: {
+    visible: {
       height: isOpen ? "100px" : "0px",
+      transition: {
+        duration: 0.2,
+      },
     },
-  });
-  const popupMenuForMobileScreen = useSpring({
-    config: {
-      duration: 150,
+  };
+  const popupMenuForMobileScreen = {
+    hidden: {
+      opacity: 0,
+      height: "0",
     },
-    from: {
-      width: "0px",
-      height: "100vh",
+    visible: {
+      opacity: 1,
+      height: isOpen ? "100vh" : "0px",
+      transition: {
+        duration: 0.5,
+      },
     },
-    to: {
-      width: isOpen ? "100%" : "0px",
-      height: "100vh",
-    },
-  });
+  };
 
   return {
     animation,

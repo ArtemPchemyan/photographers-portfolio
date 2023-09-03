@@ -1,7 +1,5 @@
-"use client";
-
 import React, { useState } from "react";
-import { animated } from "@react-spring/web";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useNavbar } from "@/components/navbar/use-navbar";
 import { useWindowSize } from "@uidotdev/usehooks";
@@ -15,11 +13,8 @@ export type MenuItemsType = {
 
 const MENU_ITEMS: MenuItemsType[] = [
   { title: "Main", link: "/" },
-  { title: "About", link: "/about" },
-  {
-    title: "Portfolio",
-    link: "/projects",
-  },
+  { title: "Workflow", link: "/workflow" },
+  { title: "Portfolio", link: "/projects" },
 ];
 
 export function Navbar() {
@@ -29,27 +24,30 @@ export function Navbar() {
     animationForMobileScreen,
     popupMenu,
     popupMenuForMobileScreen,
-  } = useNavbar(MENU_ITEMS, isOpen);
+  } = useNavbar(isOpen);
 
-  const size = useWindowSize();
+  const { width } = useWindowSize();
 
-  if (size.width && size.width < 600) {
+  if (width && width < 600) {
     return (
       <NavbarLayout
         menuButton={
           <MenuButton onClick={() => setIsOpen(!isOpen)} className="p-5" />
         }
-        style={popupMenuForMobileScreen}
+        animation={popupMenuForMobileScreen}
         className="flex-col"
       >
-        {animationForMobileScreen.map((props, index) => (
-          <animated.p
+        {MENU_ITEMS.map((el, index) => (
+          <motion.p
             key={index}
-            style={props}
-            className="block px-10 bg-transparent"
+            className="block px-10 bg-transparent py-1 text-xl"
+            variants={animationForMobileScreen}
+            initial={animationForMobileScreen.hidden}
+            animate={animationForMobileScreen.visible(index)}
+            custom={index}
           >
             <Link href={MENU_ITEMS[index].link}>{MENU_ITEMS[index].title}</Link>
-          </animated.p>
+          </motion.p>
         ))}
       </NavbarLayout>
     );
@@ -60,16 +58,20 @@ export function Navbar() {
       menuButton={
         <MenuButton onClick={() => setIsOpen(!isOpen)} className="p-5" />
       }
-      style={popupMenu}
+      animation={popupMenu}
     >
-      {animation.map((props, index) => (
-        <animated.p
+      {MENU_ITEMS.map((el, index) => (
+        <motion.p
           key={index}
-          style={props}
           className="block px-10 bg-transparent"
+          variants={animation}
+          initial={animation.hidden}
+          animate={animation.visible(index)}
+          exit={animation.hidden}
+          custom={index}
         >
           <Link href={MENU_ITEMS[index].link}>{MENU_ITEMS[index].title}</Link>
-        </animated.p>
+        </motion.p>
       ))}
     </NavbarLayout>
   );
