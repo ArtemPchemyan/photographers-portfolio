@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { animated } from "@react-spring/web";
 import Link from "next/link";

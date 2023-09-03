@@ -43,7 +43,10 @@ export function Skill({ title, progress, index }: PropsType) {
       custom={index}
       viewport={{ amount: 0.3, once: true }}
     >
-      <div className="pb-6">{title}</div>
+      <div className="pb-6 flex justify-between">
+        {title}
+        <div>{progress}%</div>
+      </div>
       <div className="bg-slate-50 h-1">
         <motion.div
           className="h-1 bg-orange-500"

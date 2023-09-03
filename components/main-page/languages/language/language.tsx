@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 
 type PropsType = {
   language: string;
+  lvl: string;
   progress: number;
   index: number;
 };
 
-export function Language({ language, progress, index }: PropsType) {
+export function Language({ language, progress, index, lvl }: PropsType) {
   const languageAnimation = {
     hidden: {
       opacity: 0,
@@ -51,7 +52,9 @@ export function Language({ language, progress, index }: PropsType) {
         whileInView="completed"
         viewport={{ once: true }}
       >
-        <div className="w-20 h-20 bg-default-bg inset-0 rounded-full" />
+        <div className="w-20 h-20 bg-default-bg inset-0 rounded-full flex justify-center items-center tracking-wider">
+          {lvl}
+        </div>
       </motion.div>
       {language}
     </motion.div>

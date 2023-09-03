@@ -3,21 +3,25 @@ import { Language } from "@/components/main-page/languages/language/language";
 
 type LanguageType = {
   language: string;
+  lvl: string;
   progress: number;
 };
 
 const LANGUAGES: LanguageType[] = [
   {
     language: "Czech",
-    progress: 80,
+    lvl: "B2",
+    progress: 75,
   },
   {
     language: "English",
+    lvl: "B1",
     progress: 60,
   },
   {
     language: "Russian",
-    progress: 100,
+    lvl: "C1",
+    progress: 95,
   },
 ];
 
@@ -34,6 +38,7 @@ export function Languages({ divider }: PropsType) {
           <Language
             key={index}
             language={el.language}
+            lvl={el.lvl}
             progress={el.progress}
             index={index}
           />

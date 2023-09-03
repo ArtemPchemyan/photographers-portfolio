@@ -10,7 +10,7 @@ export type ServiceType = {
   title: string;
   description: string;
 };
-export const iconsClassName = "w-20 h-20";
+const iconsClassName = "w-20 h-20";
 export const SERVICES: ServiceType[] = [
   {
     icon: <AdIcon className={iconsClassName} />,
@@ -40,7 +40,7 @@ export function Services({ divider }: PropsType) {
   return (
     <>
       {divider}
-      <motion.div className="flex wrap gap-16 mt-8 max-lg:flex-col">
+      <motion.div className="flex wrap xl:gap-16 pt-8 max-lg:flex-col max-lg:pb-16">
         {SERVICES.map((service, index) => (
           <Service key={index} service={service} index={index} />
         ))}

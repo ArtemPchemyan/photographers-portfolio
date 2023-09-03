@@ -15,7 +15,7 @@ export function Photo({ projectId, photo, index }: PropsType) {
   const { coverAnimation, hidden, visible } = useAnimation();
   return (
     <motion.div
-      className="items-center overflow-hidden "
+      className="items-center overflow-hidden"
       variants={coverAnimation}
       initial={hidden}
       whileInView={visible(index)}

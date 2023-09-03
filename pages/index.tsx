@@ -7,6 +7,7 @@ import { Services } from "@/components/main-page/services/services";
 import { Divider } from "@/components/ui-kit/divider";
 import { Skills } from "@/components/main-page/skills/skills";
 import { Languages } from "@/components/main-page/languages/languages";
+import Contacts from "@/components/main-page/contacts/contacts";
 
 export default function MainPage() {
   return (
@@ -16,6 +17,7 @@ export default function MainPage() {
       services={<Services divider={<Divider title={"Services"} />} />}
       skills={<Skills divider={<Divider title={"Hard Skills"} />} />}
       languages={<Languages divider={<Divider title={"Languages"} />} />}
+      contacts={<Contacts divider={<Divider title={"Contacts"} />} />}
     />
   );
 }

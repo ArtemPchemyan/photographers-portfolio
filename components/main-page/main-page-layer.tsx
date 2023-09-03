@@ -6,6 +6,7 @@ type PropsType = {
   services: ReactNode;
   skills: ReactNode;
   languages: ReactNode;
+  contacts: ReactNode;
 };
 
 export function MainPageLayer({
@@ -14,6 +15,7 @@ export function MainPageLayer({
   services,
   skills,
   languages,
+  contacts,
 }: PropsType) {
   return (
     <div className="h-screen">
@@ -30,6 +32,9 @@ export function MainPageLayer({
       </section>
       <section className="flex flex-col justify-start items-center relative max-w-[1300px] mx-auto min-h-[50vh]">
         {languages}
+      </section>
+      <section className="relative max-w-[1300px] mx-auto min-h-[50vh]">
+        {contacts}
       </section>
     </div>
   );
