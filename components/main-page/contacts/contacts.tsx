@@ -49,9 +49,9 @@ export function Contacts({ divider }: PropsType) {
     <>
       {divider}
       <div className="max-w-[600px] py-24 grid grid-cols-2 max-[800px]:flex max-[800px]:flex-col max-[800px]:py-12 gap-y-6 mx-auto absolute left-1/2 -translate-x-1/2 ">
-        {CONTACTS.map((el) => {
+        {CONTACTS.map((el, index) => {
           return (
-            <Link href={el.link} className="flex items-center pl-8">
+            <Link key={index} href={el.link} className="flex items-center pl-8">
               <div>{el.icon}</div>
               <div className="pl-4">{el.contact}</div>
             </Link>
