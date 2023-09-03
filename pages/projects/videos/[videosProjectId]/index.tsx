@@ -18,7 +18,7 @@ export default function PhotosProjectId() {
   const router = useRouter();
   const { videosProjectId } = router.query;
 
-  const { coverAnimation, hidden, visible, hover } = useAnimation();
+  const { coverAnimation, hidden, visible } = useAnimation();
 
   const project = videosProjects.find((el) => el.id === videosProjectId);
 
@@ -33,7 +33,6 @@ export default function PhotosProjectId() {
             variants={coverAnimation}
             initial={hidden}
             whileInView={visible(index)}
-            whileHover={hover}
             viewport={{ once: true }}
           >
             <LiteYouTubeEmbed
