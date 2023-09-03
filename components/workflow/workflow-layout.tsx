@@ -25,7 +25,7 @@ export function WorkflowLayout({ navbar, children }: PropsType) {
       {/*  }}*/}
       {/*  transition={{ duration: 3 }}*/}
       {/*/>*/}
-      <section className="flex items-center max-w-[1280px] 2xl:scale-150 2xl:top-[400px] mx-auto min-h-[80vh] pt-24">
+      <section className="flex items-center max-w-[1280px] 2xl:scale-150 mx-auto min-h-[80vh] pt-24">
         <div className="relative flex flex-wrap max-lg:flex-col gap-10 justify-center items-center max-w-[1200px] mx-auto">
           {children}
         </div>

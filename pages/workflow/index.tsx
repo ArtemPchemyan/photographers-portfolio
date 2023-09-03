@@ -1,5 +1,5 @@
 import React from "react";
-import { WorkflowLayout } from "@/pages/workflow/workflow-layout";
+import { WorkflowLayout } from "@/components/workflow/workflow-layout";
 import { Navbar } from "@/components/navbar/navbar";
 import { motion } from "framer-motion";
 
