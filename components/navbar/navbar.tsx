@@ -62,9 +62,8 @@ export function Navbar() {
       animation={popupMenu}
     >
       {MENU_ITEMS.map((el, index) => (
-        <AnimatePresence initial={false}>
+        <AnimatePresence key={index} initial={false}>
           <motion.p
-            key={index}
             className="block px-10 bg-transparent"
             variants={animation}
             initial={animation.hidden}
