@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useNavbar } from "@/components/navbar/use-navbar";
 import { useWindowSize } from "@uidotdev/usehooks";
@@ -44,6 +44,7 @@ export function Navbar() {
             variants={animationForMobileScreen}
             initial={animationForMobileScreen.hidden}
             animate={animationForMobileScreen.visible(index)}
+            exit={animation.hidden}
             custom={index}
           >
             <Link href={MENU_ITEMS[index].link}>{MENU_ITEMS[index].title}</Link>
@@ -61,17 +62,19 @@ export function Navbar() {
       animation={popupMenu}
     >
       {MENU_ITEMS.map((el, index) => (
-        <motion.p
-          key={index}
-          className="block px-10 bg-transparent"
-          variants={animation}
-          initial={animation.hidden}
-          animate={animation.visible(index)}
-          exit={animation.hidden}
-          custom={index}
-        >
-          <Link href={MENU_ITEMS[index].link}>{MENU_ITEMS[index].title}</Link>
-        </motion.p>
+        <AnimatePresence initial={false}>
+          <motion.p
+            key={index}
+            className="block px-10 bg-transparent"
+            variants={animation}
+            initial={animation.hidden}
+            animate={animation.visible(index)}
+            exit={animation.hidden}
+            custom={index}
+          >
+            <Link href={MENU_ITEMS[index].link}>{MENU_ITEMS[index].title}</Link>
+          </motion.p>
+        </AnimatePresence>
       ))}
     </NavbarLayout>
   );

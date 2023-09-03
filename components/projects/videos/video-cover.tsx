@@ -29,9 +29,14 @@ export function VideoCover({ project, index }: PropsType) {
           />
         </Link>
       </motion.div>
-      <div>
+      <motion.div
+        initial={{ height: 0, opacity: 0 }}
+        whileInView={{ height: "auto", opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <h2 className="text-2xl my-6 text-center">{project.title}</h2>
-      </div>
+      </motion.div>
     </div>
   );
 }

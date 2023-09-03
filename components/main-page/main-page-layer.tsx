@@ -33,7 +33,7 @@ export function MainPageLayer({
       <section className="flex flex-col justify-start items-center relative max-w-[1300px] mx-auto min-h-[50vh]">
         {languages}
       </section>
-      <section className="relative max-w-[1300px] mx-auto min-h-[50vh]">
+      <section className="relative max-w-[1300px] mx-auto min-h-[30vh]">
         {contacts}
       </section>
     </div>

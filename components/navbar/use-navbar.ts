@@ -9,6 +9,7 @@ export function useNavbar(isOpen: boolean) {
         type: "spring",
         mass: 0.5,
         duration: 0.2,
+        ease: "easeOut",
         delay: custom * 0.1,
       },
     }),
@@ -16,16 +17,18 @@ export function useNavbar(isOpen: boolean) {
   const animationForMobileScreen = {
     hidden: {
       transform: "scale(0)",
-      display: "none",
+      // display: "none",
       opacity: 0,
     },
     visible: (custom: number) => ({
       transform: isOpen ? "scale(1)" : "scale(0)",
-      opacity: 1,
-      display: isOpen ? "inline-block" : "none",
+      opacity: isOpen ? 1 : 0,
+      // display: isOpen ? "inline-block" : "none",
       transition: {
         type: "spring",
+        mass: 0.5,
         duration: 0.2,
+        ease: "easeOut",
         delay: custom * 0.1,
       },
     }),
