@@ -28,8 +28,8 @@ const Workflow = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 1,
-        delay: custom * 0.3,
+        duration: 0.5,
+        delay: custom * 0.1,
       },
     }),
   };

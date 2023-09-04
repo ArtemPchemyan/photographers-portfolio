@@ -17,7 +17,7 @@ module.exports = {
           "radial-gradient(circle farthest-corner at 10% 20%, rgba(253,203,50,1) 0%, rgba(244,56,98,1) 100.2%)",
       },
       boxShadow: {
-        inset: "inset 1px 1px 1px rgba(255,255,255,0.5)",
+        inset: "inset 0px 0px 3px rgba(1,1,1,0.5)",
       },
     },
   },

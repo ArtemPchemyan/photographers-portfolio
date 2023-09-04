@@ -12,9 +12,14 @@ export function WorkflowLayout({ navbar, children }: PropsType) {
       {navbar}
       <motion.div
         className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-orange-500 to-violet-500"
-        initial={{ clipPath: "circle(10% at right 70%)" }}
-        animate={{ clipPath: "circle(45% at right 60%)" }}
-        transition={{ duration: 4 }}
+        initial={{ clipPath: "circle(1% at right 1%)" }}
+        animate={{ clipPath: "circle(45% at right 0%)" }}
+        transition={{
+          duration: 4,
+          type: "spring",
+          mass: 2,
+          damping: 10,
+        }}
       />
       {/*<motion.div*/}
       {/*  className="absolute top-0 left-0 w-[150px] h-[150px] bg-gradient-to-b from-[#2196f3] to-[#e91e63]"*/}
