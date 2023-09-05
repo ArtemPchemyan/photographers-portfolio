@@ -42,7 +42,7 @@ const Workflow = () => {
         return (
           <motion.div
             key={index}
-            className="relative w-[300px] h-[130px] shadow-[20px_20px_50px_rgba(0,_0,_0,_0.5)] bg-white/5 overflow-hidden flex justify-center items-center rounded-2xl border-t-[1px] border-t-white/40 border-l-[1px] border-l-white/40 backdrop-blur-sm "
+            className="relative w-[300px] h-[130px] shadow-[20px_20px_50px_rgba(0,_0,_0,_0.5)] bg-white/5 overflow-hidden flex justify-center items-center rounded-2xl border-t-[1px] border-t-white/40 border-l-[1px] border-l-white/40 backdrop-blur-md "
             variants={animation}
             initial={"hidden"}
             whileInView={"visible"}
