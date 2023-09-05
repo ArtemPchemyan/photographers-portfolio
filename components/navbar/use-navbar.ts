@@ -35,10 +35,10 @@ export function useNavbar(isOpen: boolean) {
   };
   const popupMenu = {
     hidden: {
-      height: "0px",
+      // height: "0px",
     },
     visible: {
-      height: isOpen ? "100px" : "0px",
+      // height: isOpen ? "100px" : "0px",
       transition: {
         duration: 0.2,
       },

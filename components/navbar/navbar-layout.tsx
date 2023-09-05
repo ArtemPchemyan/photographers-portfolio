@@ -24,7 +24,7 @@ export function NavbarLayout({
         animate={animation.visible}
         exit={animation.hidden}
         className={clsx(
-          "flex justify-center items-center absolute bg-default-bg w-full text-center",
+          "flex justify-center items-center absolute bg-default-bg min-[600px]:bg-transparent w-full text-center h-20",
           className
         )}
       >
