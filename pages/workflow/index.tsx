@@ -51,7 +51,7 @@ const Workflow = () => {
           >
             <div className="p-5 text-center duration-500">
               <h2 className="absolute top-1/2 left-[23%] -translate-x-1/2 -translate-y-1/2 text-[200px] opacity-5 pointer-events-none ">
-                {index}
+                {index + 1}
               </h2>
               <p>{el}</p>
             </div>

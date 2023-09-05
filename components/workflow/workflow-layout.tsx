@@ -31,7 +31,7 @@ export function WorkflowLayout({ navbar, children }: PropsType) {
         />
         <motion.div
           className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-orange-500 to-violet-500"
-          initial={{ clipPath: "circle(1% at left 90%)" }}
+          initial={{ clipPath: "circle(1% at left 100%)" }}
           whileInView={
             width && width > 640
               ? { clipPath: "circle(30% at left 90%)" }
@@ -43,7 +43,7 @@ export function WorkflowLayout({ navbar, children }: PropsType) {
             mass: 2,
             damping: 10,
             stiffness: 50,
-            delay: 0.3,
+            delay: 0.2,
           }}
         />
         <div className="relative flex flex-wrap gap-10 justify-center items-center max-w-[1200px] mx-auto">
