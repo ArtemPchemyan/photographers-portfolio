@@ -22,7 +22,7 @@ const Workflow = () => {
   const animation = {
     hidden: {
       opacity: 0,
-      scale: 0.2,
+      scale: 0,
     },
     visible: (custom: number) => ({
       opacity: 1,
@@ -42,7 +42,7 @@ const Workflow = () => {
         return (
           <motion.div
             key={index}
-            className="relative w-[300px] h-[130px] shadow-[20px_20px_50px_rgba(0,_0,_0,_0.5)] bg-white/5 overflow-hidden flex justify-center items-center rounded-2xl border-t-[1px] border-t-white/40 border-l-[1px] border-l-white/40 backdrop-blur-md "
+            className="relative w-[300px] h-[130px] shadow-[20px_20px_50px_rgba(0,_0,_0,_0.5)] bg-white/5 overflow-hidden flex justify-center items-center rounded-2xl border-l-[1px] border-l-white/50 border-t-[1px] border-t-white/40 backdrop-blur-md "
             variants={animation}
             initial={"hidden"}
             whileInView={"visible"}
@@ -50,7 +50,7 @@ const Workflow = () => {
             viewport={{ once: true }}
           >
             <div className="p-5 text-center duration-500">
-              <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[200px] opacity-5 pointer-events-none ">
+              <h2 className="absolute top-1/2 left-[23%] -translate-x-1/2 -translate-y-1/2 text-[200px] opacity-5 pointer-events-none ">
                 {index}
               </h2>
               <p>{el}</p>

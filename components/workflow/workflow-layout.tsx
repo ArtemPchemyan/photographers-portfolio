@@ -19,10 +19,10 @@ export function WorkflowLayout({ navbar, children }: PropsType) {
           animate={
             width && width > 640
               ? { clipPath: "circle(45% at right 0%)" }
-              : { clipPath: "circle(20% at right 0%)" }
+              : { clipPath: "circle(15% at right 0%)" }
           }
           transition={{
-            duration: 4,
+            duration: 3,
             type: "spring",
             mass: 2,
             damping: 10,
@@ -32,10 +32,10 @@ export function WorkflowLayout({ navbar, children }: PropsType) {
         <motion.div
           className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-orange-500 to-violet-500"
           initial={{ clipPath: "circle(1% at left 90%)" }}
-          animate={
+          whileInView={
             width && width > 640
               ? { clipPath: "circle(30% at left 90%)" }
-              : { clipPath: "circle(10% at left 90%)" }
+              : { clipPath: "circle(10% at left 100%)" }
           }
           transition={{
             duration: 4,
@@ -46,7 +46,7 @@ export function WorkflowLayout({ navbar, children }: PropsType) {
             delay: 0.3,
           }}
         />
-        <div className="relative flex flex-wrap  gap-10 justify-center items-center max-w-[1200px] mx-auto">
+        <div className="relative flex flex-wrap gap-10 justify-center items-center max-w-[1200px] mx-auto">
           {children}
         </div>
       </section>
