@@ -1,6 +1,7 @@
 import React from "react";
 import { ServiceType } from "@/components/main-page/services/services";
 import { motion } from "framer-motion";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 type PropsType = {
   service: ServiceType;
@@ -8,6 +9,7 @@ type PropsType = {
 };
 
 export const Service = ({ service, index }: PropsType) => {
+  const { width } = useWindowSize();
   const serviceAnimation = {
     hidden: {
       opacity: 0,
@@ -19,14 +21,14 @@ export const Service = ({ service, index }: PropsType) => {
       transition: {
         type: "spring",
         duration: 0.5,
-        delay: custom * 0.1,
+        delay: width && width >= 1024 ? custom * 0.1 : 0,
       },
     }),
   };
 
   return (
     <motion.div
-      className="flex flex-col items-center p-[90px] text-center"
+      className="flex flex-col items-center px-16 text-center"
       variants={serviceAnimation}
       initial="hidden"
       whileInView="visible"
